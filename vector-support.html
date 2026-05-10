@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support &amp; implementation — Vector | Volantio</title>
+    <meta name="description" content="Vector implementation and customer care: onboarding phases, stakeholders, escalation, and security documentation — weeks-first deployment on airline-trusted paths." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@200;400&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nova: { primary: "#555555", tertiary: "#777777", surface: "#FAFAF7", border: "#E5E5E2", ink: "#111111", muted: "#444444" },
+            },
+            fontFamily: {
+              display: ["Fraunces", "Georgia", "serif"],
+              sans: ["Inter", "system-ui", "sans-serif"],
+              mono: ['"JetBrains Mono"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-white text-[#111111] font-sans font-light antialiased overflow-x-hidden">
+    <div class="fixed inset-0 pointer-events-none z-[60] grain opacity-[0.35]" aria-hidden="true"></div>
+
+    <header class="fixed top-0 left-0 right-0 z-[100] glass-header border-b border-[#E5E5E2]/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,1,1)]" data-header>
+      <div class="max-w-none w-full px-6 md:px-10 lg:px-14 py-5 flex items-center justify-between gap-4 lg:gap-8">
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <span class="h-10 w-10 bg-[#111111] grid place-items-center text-white font-mono text-[12px] tracking-[1.2px] uppercase" aria-hidden="true">Vo</span>
+          <span class="font-mono text-xs tracking-[1.2px] uppercase text-[#444444] group-hover:text-[#111111] transition-colors duration-150">Volantio</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-1 flex-1 justify-center max-w-4xl" aria-label="Primary">
+          <div class="relative group">
+            <button type="button" class="nav-link font-mono text-xs tracking-[1.2px] uppercase text-[#444444] hover:text-[#111111] px-3 py-2 flex items-center gap-1 border-0 bg-transparent cursor-pointer">
+              Vector
+              <span class="text-[9px] opacity-60" aria-hidden="true">▾</span>
+            </button>
+            <div class="absolute left-0 top-full pt-2 w-[min(100vw-2rem,22rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] duration-150 z-[70]">
+              <div class="bg-white border border-[#E5E5E2] shadow-lg py-3 px-1">
+                <a href="product.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Vector Overview</a>
+                <a href="vector-how-it-works.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">How It Works</a>
+                <div class="border-t border-[#EEEEEE] my-2"></div>
+                <p class="px-4 py-1 font-mono text-[10px] uppercase tracking-wider text-[#AAAAAA]">Agents</p>
+                <a href="vector-arbitrage.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Arbitrage</a>
+                <a href="vector-oversell.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Oversell</a>
+                <a href="vector-signals.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Signals</a>
+                <a href="vector-roadmap.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">More coming — IROPS (roadmap)</a>
+                <div class="border-t border-[#EEEEEE] my-2"></div>
+                <a href="vector-support.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">How we support you</a>
+                <a href="vector-support.html#implementation-speed" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Implementation speed</a>
+                <a href="vector-support.html#customer-care" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Customer care</a>
+                <a href="product.html#security-enterprise" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <button type="button" class="nav-link font-mono text-xs tracking-[1.2px] uppercase text-[#444444] hover:text-[#111111] px-3 py-2 flex items-center gap-1 border-0 bg-transparent cursor-pointer">
+              Resources
+              <span class="text-[9px] opacity-60" aria-hidden="true">▾</span>
+            </button>
+            <div class="absolute left-0 top-full pt-2 w-[min(100vw-2rem,22rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] duration-150 z-[70]">
+              <div class="bg-white border border-[#E5E5E2] shadow-lg py-3 px-1">
+                <a href="resources.html#research" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Research &amp; white papers</a>
+                <a href="resources.html#stories" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Customer stories</a>
+                <a href="resources.html#case-studies" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Stories, cases &amp; quotes</a>
+                <a href="resources.html#results" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Results</a>
+                <a href="resources.html#news" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">News &amp; Press</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <button type="button" class="nav-link font-mono text-xs tracking-[1.2px] uppercase text-[#444444] hover:text-[#111111] px-3 py-2 flex items-center gap-1 border-0 bg-transparent cursor-pointer">
+              Company
+              <span class="text-[9px] opacity-60" aria-hidden="true">▾</span>
+            </button>
+            <div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] duration-150 z-[70]">
+              <div class="bg-white border border-[#E5E5E2] shadow-lg py-3 px-1">
+                <a href="about.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">About Volantio</a>
+                <a href="about.html#careers" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Careers</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          <a href="mailto:hello@volantio.com?subject=Contact%20Volantio" class="hidden sm:inline-flex font-mono text-[11px] sm:text-xs tracking-[1.2px] uppercase text-[#444444] px-3 sm:px-4 py-3 sm:py-5 hover:text-[#111111] transition-colors">Contact</a>
+          <a href="index.html#contact" class="inline-flex font-mono text-[11px] sm:text-xs tracking-[1.2px] uppercase text-white bg-[#111111] px-4 sm:px-6 py-4 sm:py-5 hover:bg-[#555555] whitespace-nowrap">Request a Demo</a>
+        </div>
+      </div>
+    </header>
+    <main class="hero-below-fixed-nav">
+
+      <div class="home-section reveal-up">
+        <div class="home-section__inner home-section__inner--narrow">
+        <p class="home-eyebrow">How we support you</p>
+        <h1 class="font-display text-[clamp(2rem,4vw,2.75rem)] font-light text-[#111111] leading-tight">Implementation speed, ongoing care</h1>
+        <p class="mt-6 text-[16px] leading-[1.75] text-[#555555]">Vector is built to reach production in <strong class="font-medium text-[#444444]">weeks-first</strong> time horizons &mdash; not multi-year programmes &mdash; using the integrations and governance paths airlines already trust. Exact duration depends on scenario scope, PSS path complexity, and how many channels you light up first.</p>
+        </div>
+      </div>
+
+      <section id="implementation-speed" class="border-t border-[#E5E5E2] bg-[#FAFAF7] scroll-mt-28 home-section">
+        <div class="home-section__inner home-section__inner--narrow space-y-10">
+          <div>
+            <h2 class="font-display text-xl font-light text-[#111111]">Implementation phases</h2>
+            <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">Every engagement is led with a shared workbook so revenue, operations, technology, and customer stakeholders see the same checkpoints.</p>
+            <ol class="mt-6 space-y-4 text-[15px] leading-[1.75] text-[#555555] list-decimal list-inside">
+              <li><strong class="font-medium text-[#444444]">Discover &amp; scope</strong> &mdash; scenarios, policy boundaries, channel inventory, success measures.</li>
+              <li><strong class="font-medium text-[#444444]">Configure &amp; integrate</strong> &mdash; rules, eligibility, test harnesses, non-prod PSS paths.</li>
+              <li><strong class="font-medium text-[#444444]">Pilot &amp; harden</strong> &mdash; limited production lanes, operational observation, refinement of confirm queues.</li>
+              <li><strong class="font-medium text-[#444444]">Scale &amp; expand</strong> &mdash; widen markets or agents with the same audit and monitoring spine.</li>
+            </ol>
+          </div>
+          <div>
+            <h2 class="font-display text-xl font-light text-[#111111]">Who is in the room</h2>
+            <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">Volantio solution architects pair with your integration owners; commercial leads align on offer strategy; ops validates playbooks; security reviews controls using artifacts summarized on <a href="product.html#security-enterprise" class="text-[#111111] underline underline-offset-2 decoration-[#CCCCCC] hover:decoration-[#111111]">Security &amp; Trust</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="customer-care" class="border-t border-[#E5E5E2] bg-white scroll-mt-28 home-section">
+        <div class="home-section__inner home-section__inner--narrow">
+          <h2 class="font-display text-xl font-light text-[#111111]">Customer care &amp; escalation</h2>
+          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">After go-live, named customer leads stay engaged for configuration tweaks, monitoring reviews, and incident coordination. Severity-based escalation reaches engineering when live execution or integrations are impacted.</p>
+          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">Volantio aligns release windows with your change calendars so upgrades do not collide with peak operational periods you flag in advance.</p>
+        </div>
+      </section>
+
+      <section class="border-t border-[#E5E5E2] bg-[#FAFAF7] home-section">
+        <div class="home-section__inner home-section__inner--narrow">
+          <h2 class="font-display text-xl font-light text-[#111111]">Training &amp; adoption</h2>
+          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">Enablement focuses on how analysts interpret recommendations, how ops uses pause and override, and how audit teams pull evidence &mdash; keeping day-two operations as smooth as launch week.</p>
+        </div>
+      </section>
+
+      <div class="border-t border-[#E5E5E2] home-section home-section--compact flex flex-wrap gap-4 justify-center">
+        <a href="vector-how-it-works.html" class="font-mono text-[11px] uppercase tracking-[1.2px] border border-[#E5E5E2] px-5 py-3 hover:border-[#111111]/30 bg-white">How It Works</a>
+        <a href="mailto:hello@volantio.com?subject=Vector%20support%20question" class="font-mono text-[11px] uppercase tracking-[1.2px] border border-[#E5E5E2] px-5 py-3 hover:border-[#111111]/30 bg-white">Contact Volantio</a>
+        <a href="index.html#contact" class="font-mono text-[11px] uppercase tracking-[1.2px] text-white bg-[#111111] px-5 py-3 hover:bg-[#555555]">Request a Demo</a>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

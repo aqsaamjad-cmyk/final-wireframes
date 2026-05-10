@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Volantio — Company, mission &amp; careers</title>
+    <meta
+      name="description"
+      content="Volantio, founded in 2014, helps airlines recover value from passengers already booked. Vector is the AI-enabled demand reallocation platform that safely turns intelligence into action."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nova: {
+                primary: "#555555",
+                tertiary: "#777777",
+                surface: "#FAFAF7",
+                border: "#E5E5E2",
+                ink: "#111111",
+                muted: "#444444",
+              },
+            },
+            fontFamily: {
+              display: ["Fraunces", "Georgia", "serif"],
+              sans: ["Inter", "system-ui", "sans-serif"],
+              mono: ['"JetBrains Mono"', "monospace"],
+            },
+            boxShadow: {
+              card: "0 1px 2px rgba(0,0,0,0.05)",
+              lift: "0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-white text-[#111111] font-sans font-light antialiased overflow-x-hidden">
+
+    <div class="fixed inset-0 pointer-events-none z-[60] grain opacity-[0.35]" aria-hidden="true"></div>
+
+    <header
+      class="fixed top-0 left-0 right-0 z-[100] glass-header border-b border-[#E5E5E2]/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,1,1)]"
+      data-header
+    >
+      <div class="max-w-none w-full px-6 md:px-10 lg:px-14 py-5 flex items-center justify-between gap-4 lg:gap-8">
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <span class="h-10 w-10 bg-[#111111] grid place-items-center text-white font-mono text-[12px] tracking-[1.2px] uppercase" aria-hidden="true">Vo</span>
+          <span class="font-mono text-xs tracking-[1.2px] uppercase text-[#444444] group-hover:text-[#111111] transition-colors duration-150">Volantio</span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-1 flex-1 justify-center max-w-4xl" aria-label="Primary">
+          <div class="relative group">
+            <button type="button" class="nav-link font-mono text-xs tracking-[1.2px] uppercase text-[#444444] hover:text-[#111111] px-3 py-2 flex items-center gap-1 border-0 bg-transparent cursor-pointer">
+              Vector
+              <span class="text-[9px] opacity-60" aria-hidden="true">▾</span>
+            </button>
+            <div class="absolute left-0 top-full pt-2 w-[min(100vw-2rem,22rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] duration-150 z-[70]">
+              <div class="bg-white border border-[#E5E5E2] shadow-lg py-3 px-1">
+                <a href="product.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Vector Overview</a>
+                <a href="vector-how-it-works.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">How It Works</a>
+                <div class="border-t border-[#EEEEEE] my-2"></div>
+                <p class="px-4 py-1 font-mono text-[10px] uppercase tracking-wider text-[#AAAAAA]">Agents</p>
+                <a href="vector-arbitrage.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Arbitrage</a>
+                <a href="vector-oversell.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Oversell</a>
+                <a href="vector-signals.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Signals</a>
+                <a href="vector-roadmap.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">More coming — IROPS (roadmap)</a>
+                <div class="border-t border-[#EEEEEE] my-2"></div>
+                <a href="vector-support.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">How we support you</a>
+                <a href="vector-support.html#implementation-speed" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Implementation speed</a>
+                <a href="vector-support.html#customer-care" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Customer care</a>
+                <a href="product.html#security-enterprise" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <button type="button" class="nav-link font-mono text-xs tracking-[1.2px] uppercase text-[#444444] hover:text-[#111111] px-3 py-2 flex items-center gap-1 border-0 bg-transparent cursor-pointer">
+              Resources
+              <span class="text-[9px] opacity-60" aria-hidden="true">▾</span>
+            </button>
+            <div class="absolute left-0 top-full pt-2 w-[min(100vw-2rem,22rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] duration-150 z-[70]">
+              <div class="bg-white border border-[#E5E5E2] shadow-lg py-3 px-1">
+                <a href="resources.html#research" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Research &amp; white papers</a>
+                <a href="resources.html#stories" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Customer stories</a>
+                <a href="resources.html#case-studies" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Stories, cases &amp; quotes</a>
+                <a href="resources.html#results" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Results</a>
+                <a href="resources.html#news" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">News &amp; Press</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <button type="button" class="nav-link font-mono text-xs tracking-[1.2px] uppercase text-[#111111] px-3 py-2 flex items-center gap-1 border-0 bg-transparent cursor-pointer border-b-[1.5px] border-[#111111] pb-1 mb-[-1px]">
+              Company
+              <span class="text-[9px] opacity-60" aria-hidden="true">▾</span>
+            </button>
+            <div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] duration-150 z-[70]">
+              <div class="bg-white border border-[#E5E5E2] shadow-lg py-3 px-1">
+                <a href="about.html" class="block px-4 py-2.5 text-[13px] text-[#111111] bg-[#FAFAF7]">About Volantio</a>
+                <a href="about.html#careers" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Careers</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          <a href="mailto:hello@volantio.com?subject=Contact%20Volantio" class="hidden sm:inline-flex font-mono text-[11px] sm:text-xs tracking-[1.2px] uppercase text-[#444444] px-3 sm:px-4 py-3 sm:py-5 hover:text-[#111111] transition-colors">Contact</a>
+          <a href="index.html#contact" class="inline-flex font-mono text-[11px] sm:text-xs tracking-[1.2px] uppercase text-white bg-[#111111] px-4 sm:px-6 py-4 sm:py-5 border-0 hover:bg-[#555555] transition-colors whitespace-nowrap">Request a Demo</a>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- ── Hero — centered + full-width visual ─────────────── -->
+      <section class="relative w-full bg-white overflow-hidden hero-below-fixed-nav flex flex-col">
+
+        <!-- Top: centered copy -->
+        <div class="text-center px-8 md:px-10 lg:px-14 pt-16 pb-14 max-w-4xl mx-auto w-full">
+          <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555] mb-7">About Volantio</p>
+          <h1 class="font-display text-[clamp(2.8rem,5.5vw,4.5rem)] leading-[1.04] font-light tracking-tight text-[#111111]">
+            Building the system that recovers<br class="hidden md:block"> what airlines leave behind
+          </h1>
+          <p class="mt-7 text-base leading-[1.75] text-[#555555] max-w-xl mx-auto">
+            Volantio was founded in 2014 on a simple belief &mdash; airlines could drive higher profit from passengers already on their planes, without adding acquisition cost. <strong class="font-medium text-[#444444]">Vector</strong> is the demand reallocation platform that delivers on that promise today: governed execution, with <strong class="font-medium text-[#444444]">safety and accuracy</strong> when passengers are affected.
+          </p>
+        </div>
+
+        <!-- Bottom: full-width dark visual -->
+        <div class="relative w-full h-[56vh] min-h-[360px] bg-[#080A0F] overflow-hidden">
+          <!-- Radial gradient atmosphere -->
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_80%,#0A1428_0%,#05070D_60%)]"></div>
+          <!-- Global network SVG -->
+          <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1250 500" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <style>
+                .rt   { stroke-dasharray: 10 8; animation: fly 3.2s linear infinite; }
+                .rt-b { stroke-dasharray: 10 8; animation: fly 4.8s linear infinite 0.4s; }
+                .rt-c { stroke-dasharray: 10 8; animation: fly 4s   linear infinite 1.2s; }
+                .rt-d { stroke-dasharray: 10 8; animation: fly 5.5s  linear infinite 2s; }
+                @keyframes fly { to { stroke-dashoffset: -72; } }
+                .hq-ring { animation: hq 2.4s ease-out infinite; }
+                @keyframes hq { 0% { r: 7; opacity: 0.7; } 100% { r: 32; opacity: 0; } }
+              </style>
+            </defs>
+
+            <!-- ── base route traces (static, faint baseline) ────────── -->
+            <path d="M182,222 Q344,72 504,146"  stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <path d="M504,146 Q596,108 682,234" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <path d="M682,234 Q724,238 764,262" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <path d="M764,262 Q854,242 944,256" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <path d="M944,256 Q994,314 1024,384" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <path d="M764,262 Q826,294 884,306" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <path d="M884,306 Q966,350 1024,384" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <path d="M182,222 Q168,274 204,308" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+            <!-- ── animated route arcs ──────────────────────────────── -->
+            <path class="rt"   d="M182,222 Q344,72 504,146"  stroke="#555555" stroke-width="1.8"/>
+            <path class="rt-c" d="M182,222 Q168,274 204,308" stroke="rgba(255,255,255,0.45)" stroke-width="1.4"/>
+            <path class="rt-b" d="M504,146 Q596,108 682,234" stroke="#555555" stroke-width="1.8"/>
+            <path class="rt-d" d="M682,234 Q724,238 764,262" stroke="rgba(255,255,255,0.50)" stroke-width="1.4"/>
+            <path class="rt"   d="M764,262 Q854,242 944,256" stroke="#555555" stroke-width="1.8"/>
+            <path class="rt-b" d="M764,262 Q826,294 884,306" stroke="rgba(255,255,255,0.45)" stroke-width="1.4"/>
+            <path class="rt-c" d="M944,256 Q994,314 1024,384" stroke="rgba(255,255,255,0.50)" stroke-width="1.4"/>
+            <path class="rt-d" d="M884,306 Q966,350 1024,384" stroke="#555555" stroke-width="1.6"/>
+
+            <!-- ── Atlanta HQ — pulsing dot ───────────────────────── -->
+            <circle class="hq-ring" cx="182" cy="222" r="7" fill="none" stroke="#555555" stroke-width="1.5"/>
+            <circle cx="182" cy="222" r="7" fill="#555555"/>
+            <circle cx="182" cy="222" r="3.5" fill="white"/>
+
+            <!-- ── office city dots ───────────────────────────────── -->
+            <circle cx="504" cy="146" r="5"   fill="white"/>
+            <circle cx="204" cy="308" r="4.5" fill="white"/>
+            <circle cx="682" cy="234" r="5"   fill="white"/>
+            <circle cx="764" cy="262" r="5"   fill="white"/>
+            <circle cx="944" cy="256" r="4.5" fill="white"/>
+            <circle cx="1024" cy="384" r="5"  fill="white"/>
+            <circle cx="884" cy="306" r="4.5" fill="white"/>
+
+            <!-- ── dot inner cores ────────────────────────────────── -->
+            <circle cx="504" cy="146" r="2"   fill="rgba(100,100,100,0.9)"/>
+            <circle cx="204" cy="308" r="2"   fill="rgba(100,100,100,0.9)"/>
+            <circle cx="682" cy="234" r="2"   fill="rgba(100,100,100,0.9)"/>
+            <circle cx="764" cy="262" r="2"   fill="rgba(100,100,100,0.9)"/>
+            <circle cx="944" cy="256" r="2"   fill="rgba(100,100,100,0.9)"/>
+            <circle cx="1024" cy="384" r="2"  fill="rgba(100,100,100,0.9)"/>
+            <circle cx="884" cy="306" r="2"   fill="rgba(100,100,100,0.9)"/>
+
+            <!-- ── city labels ─────────────────────────────────────── -->
+            <text x="198"  y="218"  font-size="9.5" font-weight="600" fill="#888888"   font-family="JetBrains Mono, monospace" letter-spacing="1.6">ATL · HQ</text>
+            <text x="516"  y="140"  font-size="9"   fill="rgba(255,255,255,0.75)" font-family="JetBrains Mono, monospace" letter-spacing="1.3">AMS</text>
+            <text x="216"  y="322"  font-size="9"   fill="rgba(255,255,255,0.70)" font-family="JetBrains Mono, monospace" letter-spacing="1.3">BOG</text>
+            <text x="694"  y="228"  font-size="9"   fill="rgba(255,255,255,0.75)" font-family="JetBrains Mono, monospace" letter-spacing="1.3">DXB</text>
+            <text x="776"  y="256"  font-size="9"   fill="rgba(255,255,255,0.75)" font-family="JetBrains Mono, monospace" letter-spacing="1.3">BOM</text>
+            <text x="956"  y="250"  font-size="9"   fill="rgba(255,255,255,0.70)" font-family="JetBrains Mono, monospace" letter-spacing="1.3">MNL</text>
+            <text x="1034" y="378"  font-size="9"   fill="rgba(255,255,255,0.70)" font-family="JetBrains Mono, monospace" letter-spacing="1.3">SYD</text>
+            <text x="896"  y="300"  font-size="9"   fill="rgba(255,255,255,0.65)" font-family="JetBrains Mono, monospace" letter-spacing="1.3">SIN</text>
+          </svg>
+          <!-- Glow spots -->
+          <div class="absolute left-[18%] top-[40%] w-80 h-80 rounded-full bg-[#555555] opacity-[0.07] blur-[100px]" aria-hidden="true"></div>
+          <div class="absolute right-[20%] top-[30%] w-64 h-64 rounded-full bg-[#777777] opacity-[0.06] blur-[90px]" aria-hidden="true"></div>
+
+          <!-- Stat strip pinned to the bottom -->
+          <div class="absolute bottom-0 left-0 right-0 border-t border-white/[0.07] flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-white/[0.07]">
+            <div class="flex-1 flex flex-col items-center justify-center py-5 gap-1">
+              <p class="font-display text-[1.9rem] leading-none font-light text-white">2014</p>
+              <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-white/35">Founded · Atlanta, GA</p>
+            </div>
+            <div class="flex-1 flex flex-col items-center justify-center py-5 gap-1">
+              <p class="font-display text-[1.9rem] leading-none font-light text-white">7</p>
+              <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-white/35">Countries · Global team</p>
+            </div>
+            <div class="flex-1 flex flex-col items-center justify-center py-5 gap-1">
+              <p class="font-display text-[1.9rem] leading-none font-light text-white">$18M+</p>
+              <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-white/35">Revenue recovered · Live</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ── Mission ────────────────────────────────────────── -->
+      <section class="relative bg-white border-t border-[#E5E5E2] home-section home-section--roomy">
+
+        <!-- Full-width image with overlaid text card -->
+        <div class="relative overflow-hidden" style="height: 560px;">
+
+          <!-- Background photo -->
+          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1400&q=85')"></div>
+          <!-- Gentle dark wash -->
+          <div class="absolute inset-0 bg-black/30"></div>
+
+          <!-- White card — bottom left, same inset as page padding -->
+          <div class="absolute left-10 bottom-10 bg-white p-9 md:p-11 max-w-[440px]">
+            <p class="font-mono text-[12px] uppercase tracking-[1.6px] text-[#555555] mb-5">Our mission</p>
+            <h2 class="font-display text-[clamp(1.6rem,2.6vw,2.1rem)] leading-[1.1] font-light tracking-tight text-[#111111] mb-5">
+              Demand reallocation airlines can trust at passenger scale
+            </h2>
+            <p class="text-[13px] leading-[1.8] text-[#555555]">
+              We help carriers close the gap between insight and compliant action in the PSS and passenger channels. Vector keeps humans in charge while shortening the window from signal to execution &mdash; so revenue, operations, and customer teams share one system of record.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ── Our story ──────────────────────────────────────── -->
+      <section class="relative bg-white border-t border-[#E5E5E2] home-section home-section--roomy">
+        <div class="home-section__inner">
+        <div class="mb-14">
+          <p class="home-eyebrow">Our story</p>
+          <h2 class="font-display text-[clamp(2rem,4vw,3rem)] leading-[1.06] font-light tracking-tight text-[#111111]">
+            A decade building the right system
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#E5E5E2] border border-[#E5E5E2]">
+
+          <!-- Milestone 1 -->
+          <div class="bg-white px-8 py-12 flex flex-col gap-5">
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555] mb-2">2014</p>
+              <p class="font-display text-[1.35rem] leading-[1.2] font-light text-[#111111]">The founding insight</p>
+            </div>
+            <p class="text-[14px] leading-[1.8] text-[#555555]">
+              Azim Barodawala and Fenn Bailey founded Volantio in Atlanta with one conviction: passenger flexibility is an untapped airline asset. The first products turned that flexibility into voluntary moves and revenue recovery — and set the foundation for everything that followed.
+            </p>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="bg-white px-8 py-12 flex flex-col gap-5">
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555] mb-2">The build</p>
+              <p class="font-display text-[1.35rem] leading-[1.2] font-light text-[#111111]">Years of airline-grade engineering</p>
+            </div>
+            <p class="text-[14px] leading-[1.8] text-[#555555]">
+              Direct integrations with leading PSS providers. AI prediction models refined on real booking data. Passenger engagement strategies optimised for the highest acceptance rates. A decade of iteration until the system could operate reliably, at scale, across live airline operations.
+            </p>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="bg-white px-8 py-12 flex flex-col gap-5">
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555] mb-2">Today</p>
+              <p class="font-display text-[1.35rem] leading-[1.2] font-light text-[#111111]">Vector</p>
+            </div>
+            <p class="text-[14px] leading-[1.8] text-[#555555]">
+              <strong class="font-medium text-[#444444]">Vector</strong> is the agent-based execution layer that carries Volantio&rsquo;s decade of airline operations learning: discovery and scoring on top of your data, offers and PSS moves inside policies you define, and evidence for every passenger-affecting decision. It is the evolution of our platform &mdash; not a generic AI bolt-on.
+            </p>
+          </div>
+
+        </div>
+        </div>
+
+      </section>
+
+      <!-- ── Team ───────────────────────────────────────────── -->
+      <section class="relative bg-[#FAFAF7] border-t border-[#E5E5E2] home-section home-section--roomy">
+        <div class="home-section__inner">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+          <div>
+            <p class="home-eyebrow">The team</p>
+            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] leading-[1.06] font-light tracking-tight text-[#111111]">
+              Leadership
+            </h2>
+          </div>
+          <p class="text-[14px] leading-[1.75] text-[#555555] max-w-sm lg:text-right">
+            A global team based across the US, Netherlands, Australia, Colombia, India, and the Philippines.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#E5E5E2] border border-[#E5E5E2]">
+
+          <!-- Card 1 -->
+          <div class="bg-[#FAFAF7] px-8 py-10 flex flex-col gap-4">
+            <div class="h-12 w-12 bg-[#111111] grid place-items-center shrink-0">
+              <span class="font-mono text-[12px] tracking-[1.2px] uppercase text-white">AB</span>
+            </div>
+            <div>
+              <p class="text-[15px] font-medium text-[#111111]">Azim Barodawala</p>
+              <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#555555] mt-1">Co-founder &amp; CEO</p>
+            </div>
+            <p class="text-[13px] leading-[1.75] text-[#555555]">Over a decade of travel and technology experience, focused on transforming airline revenue operations through intelligent automation.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-[#FAFAF7] px-8 py-10 flex flex-col gap-4">
+            <div class="h-12 w-12 bg-[#111111] grid place-items-center shrink-0">
+              <span class="font-mono text-[12px] tracking-[1.2px] uppercase text-white">FB</span>
+            </div>
+            <div>
+              <p class="text-[15px] font-medium text-[#111111]">Fenn Bailey</p>
+              <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#555555] mt-1">Co-founder &amp; Technical Advisor</p>
+            </div>
+            <p class="text-[13px] leading-[1.75] text-[#555555]">Self-taught engineer with commercial software experience dating back to age 12, with deep expertise in building systems that operate at scale.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-[#FAFAF7] px-8 py-10 flex flex-col gap-4">
+            <div class="h-12 w-12 bg-[#111111] grid place-items-center shrink-0">
+              <span class="font-mono text-[12px] tracking-[1.2px] uppercase text-white">DC</span>
+            </div>
+            <div>
+              <p class="text-[15px] font-medium text-[#111111]">Delbert Cope</p>
+              <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#555555] mt-1">Chief Technology Officer</p>
+            </div>
+            <p class="text-[13px] leading-[1.75] text-[#555555]">Leads technology strategy, governance, and innovation across the Vector platform — ensuring decisions ship reliably at airline scale.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-[#FAFAF7] px-8 py-10 flex flex-col gap-4">
+            <div class="h-12 w-12 bg-[#111111] grid place-items-center shrink-0">
+              <span class="font-mono text-[12px] tracking-[1.2px] uppercase text-white">AE</span>
+            </div>
+            <div>
+              <p class="text-[15px] font-medium text-[#111111]">Ana Maria Escobar</p>
+              <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#555555] mt-1">VP Sales</p>
+            </div>
+            <p class="text-[13px] leading-[1.75] text-[#555555]">20+ years in IT and travel industry sales across global markets — bringing Vector to airlines at every stage of the commercial conversation.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-[#FAFAF7] px-8 py-10 flex flex-col gap-4">
+            <div class="h-12 w-12 bg-[#111111] grid place-items-center shrink-0">
+              <span class="font-mono text-[12px] tracking-[1.2px] uppercase text-white">AG</span>
+            </div>
+            <div>
+              <p class="text-[15px] font-medium text-[#111111]">Andrew Gorang</p>
+              <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#555555] mt-1">VP Strategy &amp; Operations</p>
+            </div>
+            <p class="text-[13px] leading-[1.75] text-[#555555]">Strategy and business operations background from Greenlight, Intuit Mailchimp, and others — translating product capability into operational growth.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-[#FAFAF7] px-8 py-10 flex flex-col gap-4">
+            <div class="h-12 w-12 bg-[#111111] grid place-items-center shrink-0">
+              <span class="font-mono text-[12px] tracking-[1.2px] uppercase text-white">KE</span>
+            </div>
+            <div>
+              <p class="text-[15px] font-medium text-[#111111]">Kevin Earabino</p>
+              <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#555555] mt-1">VP Customer Success</p>
+            </div>
+            <p class="text-[13px] leading-[1.75] text-[#555555]">Two decades leading customer success teams across SaaS organisations — ensuring airlines get measurable results from every Vector deployment.</p>
+          </div>
+
+        </div>
+        </div>
+
+      </section>
+
+      <!-- ── Careers ───────────────────────────────────────── -->
+      <section id="careers" class="scroll-mt-28 relative bg-white border-t border-[#E5E5E2] home-section home-section--roomy">
+        <div class="home-section__inner home-section__inner--narrow">
+          <p class="home-eyebrow">Careers</p>
+          <h2 class="font-display text-[clamp(1.85rem,3.2vw,2.5rem)] leading-[1.08] font-light text-[#111111]">
+            Work where execution meets empathy
+          </h2>
+          <p class="mt-6 text-[15px] leading-[1.75] text-[#555555]">
+            Volantio builds software that touches passengers at sensitive moments. We look for people who can pair technical depth &mdash; distributed systems, machine learning operations, airline integrations &mdash; with judgment about when automation should pause for a human.
+          </p>
+          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">
+            Open roles and application workflows will be published on our applicant tracking system when available. Until then, share your background and interests with the team.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="mailto:careers@volantio.com?subject=Careers%20inquiry" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-white bg-[#111111] px-6 py-4 hover:bg-[#555555] transition-colors">Email careers@volantio.com</a>
+            <a href="https://www.linkedin.com/company/volantio/jobs/" target="_blank" rel="noopener noreferrer" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#444444] border border-[#E5E5E2] px-6 py-4 hover:border-[#111111]/30 hover:text-[#111111] transition-all">LinkedIn jobs (if listed)</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Values ─────────────────────────────────────────── -->
+      <section class="relative bg-[#111111] text-white home-section home-section--roomy overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_60%,#0A0A2A_0%,#111111_65%)]"></div>
+        <div class="relative z-10 home-section__inner">
+
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+            <div>
+              <p class="home-eyebrow home-eyebrow--dark">Culture</p>
+              <h2 class="font-display text-[clamp(2rem,4vw,3rem)] leading-[1.06] font-light tracking-tight text-white">
+                How we work
+              </h2>
+            </div>
+          <p class="text-[14px] leading-[1.75] text-white/50 max-w-sm lg:text-right">
+            Principles for teams building infrastructure when passengers are affected &mdash; in product and in how we show up for customers.
+          </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/[0.06] border border-white/[0.06]">
+
+            <div class="bg-[#111111] px-8 py-10 flex flex-col gap-4 hover:bg-white/[0.03] transition-colors duration-300">
+              <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555]">01</p>
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-white/85 font-medium">Precision over noise</p>
+              <p class="text-[13px] leading-[1.75] text-white/45">We measure what we recover, down to the seat and the flight. Outcomes matter more than activity.</p>
+            </div>
+
+            <div class="bg-[#111111] px-8 py-10 flex flex-col gap-4 hover:bg-white/[0.03] transition-colors duration-300">
+              <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555]">02</p>
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-white/85 font-medium">Curiosity first</p>
+              <p class="text-[13px] leading-[1.75] text-white/45">We ask why airlines lose revenue before we decide how to recover it. Empathy for the problem drives every product decision.</p>
+            </div>
+
+            <div class="bg-[#111111] px-8 py-10 flex flex-col gap-4 hover:bg-white/[0.03] transition-colors duration-300">
+              <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555]">03</p>
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-white/85 font-medium">Build to last</p>
+              <p class="text-[13px] leading-[1.75] text-white/45">We ship systems airlines rely on every day — not demos, not dashboards. If it doesn't work at scale, it doesn't ship.</p>
+            </div>
+
+            <div class="bg-[#111111] px-8 py-10 flex flex-col gap-4 hover:bg-white/[0.03] transition-colors duration-300">
+              <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555]">04</p>
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-white/85 font-medium">Honest by default</p>
+              <p class="text-[13px] leading-[1.75] text-white/45">Every Vector decision is fully traceable. We hold ourselves to the same standard — transparent, humble, and direct.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#E5E5E2] bg-[#FAFAF7] px-4 md:px-8 lg:px-14 py-16">
+      <div class="max-w-none w-full flex flex-col md:flex-row gap-12 md:justify-between md:items-start">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="h-9 w-9 bg-[#111111] grid place-items-center text-white font-mono text-[12px] tracking-[1.2px] uppercase">Vo</span>
+            <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#444444]">Volantio</span>
+          </div>
+          <p class="mt-6 text-sm leading-[22px] text-[#444444] max-w-xs">
+            <strong class="font-medium text-[#111111]">Vector</strong> from Volantio: AI-enabled demand reallocation with governed execution in your PSS and passenger channels.
+          </p>
+        </div>
+        <nav class="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-10 font-mono text-[11px] uppercase tracking-[1.2px] flex-1 max-w-4xl">
+          <div class="space-y-3">
+            <p class="text-[#111111]">Vector</p>
+            <a href="product.html" class="block text-[#888888] hover:text-[#111111]">Overview</a>
+            <a href="vector-how-it-works.html" class="block text-[#888888] hover:text-[#111111]">How It Works</a>
+            <a href="vector-support.html" class="block text-[#888888] hover:text-[#111111]">How we support you</a>
+            <a href="product.html#security-enterprise" class="block text-[#888888] hover:text-[#111111]">Security &amp; Trust</a>
+          </div>
+          <div class="space-y-3">
+            <p class="text-[#111111]">Resources</p>
+            <a href="resources.html#research" class="block text-[#888888] hover:text-[#111111]">Research &amp; white papers</a>
+            <a href="resources.html#stories" class="block text-[#888888] hover:text-[#111111]">Customer stories</a>
+            <a href="resources.html#case-studies" class="block text-[#888888] hover:text-[#111111]">Stories, cases &amp; quotes</a>
+            <a href="resources.html#results" class="block text-[#888888] hover:text-[#111111]">Results</a>
+            <a href="resources.html#news" class="block text-[#888888] hover:text-[#111111]">News &amp; Press</a>
+          </div>
+          <div class="space-y-3">
+            <p class="text-[#111111]">Company</p>
+            <a href="about.html" class="block text-[#888888] hover:text-[#111111]">About Volantio</a>
+            <a href="about.html#careers" class="block text-[#888888] hover:text-[#111111]">Careers</a>
+            <a href="index.html#contact" class="block text-[#888888] hover:text-[#111111]">Request a Demo</a>
+            <a href="mailto:hello@volantio.com" class="block text-[#888888] hover:text-[#111111]">Contact</a>
+          </div>
+          <div class="space-y-3">
+            <p class="text-[#111111]">Legal</p>
+            <a href="#" class="block text-[#888888] hover:text-[#111111]">Privacy Policy</a>
+            <a href="#" class="block text-[#888888] hover:text-[#111111]">Subprocessors</a>
+          </div>
+        </nav>
+      </div>
+      <p class="mt-16 font-mono text-[12px] uppercase tracking-[1.4px] text-[#444444]/60">
+        &copy; <span id="footer-year"></span> Volantio · Built for airline revenue
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+      const header = document.querySelector('[data-header]');
+      if (header) {
+        window.addEventListener('scroll', () => {
+          header.classList.toggle('header-scrolled', window.scrollY > 10);
+        }, { passive: true });
+      }
+    </script>
+
+  </body>
+</html>
