@@ -1059,9 +1059,9 @@ header nav .group:hover > div[class*="absolute"] {
 }
 
 /* Homepage: Trust section — split header + 3 columns + footer (no outer panel) */
+.home-trust-band__header {
   padding: 2.25rem 1.5rem 2rem;
   border-bottom: 1px solid #e5e5e2;
-  background-color: #fafaf9;
 }
 
 @media (min-width: 768px) {
@@ -1078,20 +1078,29 @@ header nav .group:hover > div[class*="absolute"] {
 
 .home-trust-band__header-grid {
   display: grid;
-  gap: 2rem 2.5rem;
+  grid-template-columns: 1fr;
+  row-gap: 1.25rem;
+  column-gap: 2.5rem;
   align-items: start;
+}
+
+.home-trust-band__header-eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1024px) {
   .home-trust-band__header-grid {
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-    gap: 3rem;
+    row-gap: 1rem;
+    column-gap: 3rem;
   }
 }
 
 .home-trust-band__grid {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: stretch;
 }
 
 @media (min-width: 768px) {
@@ -1113,11 +1122,17 @@ header nav .group:hover > div[class*="absolute"] {
     border-bottom: none;
     border-right: 1px solid #e5e5e2;
     padding: 2.25rem 1.85rem;
+    min-height: 100%;
+    align-items: flex-start;
   }
 
   .home-trust-band__card:last-child {
     border-right: none;
   }
+}
+
+.home-trust-band__card-body {
+  max-width: 22rem;
 }
 
 .home-trust-band__icon {
