@@ -280,3 +280,45 @@
   const mq = window.matchMedia("(min-width: 1024px)");
   mq.addEventListener("change", (e) => { if (e.matches) close(); });
 })();
+
+(function initDemoRequestDialog() {
+  const dialog = document.getElementById("demo-request-dialog");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+
+  const form = document.getElementById("demo-request-form");
+  const openers = document.querySelectorAll("[data-demo-modal-open]");
+  const closers = dialog.querySelectorAll("[data-demo-modal-close]");
+  let lastTrigger = null;
+
+  function open() {
+    lastTrigger = document.activeElement;
+    dialog.showModal();
+    requestAnimationFrame(() => {
+      const field = dialog.querySelector("#demo-first-name");
+      if (field) field.focus();
+    });
+  }
+
+  function close() {
+    dialog.close();
+    if (form) form.reset();
+    if (lastTrigger && typeof lastTrigger.focus === "function") {
+      lastTrigger.focus();
+    }
+  }
+
+  openers.forEach((el) => {
+    el.addEventListener("click", () => open());
+  });
+
+  closers.forEach((el) => {
+    el.addEventListener("click", () => close());
+  });
+
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      close();
+    });
+  }
+})();

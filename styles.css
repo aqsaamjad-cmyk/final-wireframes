@@ -15,6 +15,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Homepage — demo request modal (square corners; scrim lives inside dialog) */
+#demo-request-dialog {
+  padding: 0;
+  border: none;
+  background: transparent;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  overflow-y: auto;
+}
+
+#demo-request-dialog::backdrop {
+  background: transparent;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -56,6 +72,32 @@ header nav .group:hover > div[class*="absolute"] {
     rgba(0, 0, 0, 0) 0 0 0 0,
     rgba(0, 0, 0, 0) 0 0 0 0,
     rgba(0, 0, 0, 0.05) 0 1px 2px 0;
+}
+
+/* Desktop: let pointer events pass through header chrome (gaps, blurred shell) so the
+   fixed Vector mega (z-[70]) stays reachable while moving from the trigger to links. */
+@media (min-width: 1024px) {
+  .glass-header,
+  .glass-header > div {
+    pointer-events: none;
+  }
+
+  .glass-header > div > * {
+    pointer-events: auto;
+  }
+
+  .glass-header a,
+  .glass-header button {
+    pointer-events: auto;
+  }
+
+  .glass-header nav {
+    pointer-events: none !important;
+  }
+
+  .glass-header nav .group {
+    pointer-events: auto !important;
+  }
 }
 
 .gradient-shell {
@@ -221,6 +263,111 @@ header nav .group:hover > div[class*="absolute"] {
 }
 
 /* Reduced motion: keep layout, drop GSAP-driven opacity transforms via JS fallback */
+/* Vector mega menu — Inter light/medium + JetBrains mono labels (matches header + body) */
+.nav-vector-mega {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #111111;
+  border-radius: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-vector-mega a {
+  border-radius: 0;
+}
+
+.nav-vector-mega__banner {
+  background-color: #f9f9f9;
+  border-radius: 0;
+  transition: background-color 0.15s ease;
+}
+
+.nav-vector-mega__banner:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-vector-mega__banner:focus-visible {
+  outline: 2px solid rgba(17, 17, 17, 0.22);
+  outline-offset: -2px;
+}
+
+.nav-vector-mega__banner-label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #111111;
+}
+
+.nav-vector-mega__section-label {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: #111111;
+}
+
+.nav-vector-mega__title {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: #111111;
+}
+
+.nav-vector-mega__dek {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #444444;
+}
+
+.nav-vector-mega__column-label {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(68, 68, 68, 0.55);
+}
+
+.nav-vector-mega__icon-well {
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e5;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.nav-vector-mega__support-link {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(68, 68, 68, 0.55);
+}
+
+.nav-vector-mega__support-link:hover {
+  color: #111111;
+}
+
+.nav-vector-mega .nav-vector-mega__chev {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: #c4c4c4;
+  flex-shrink: 0;
+}
+
+.nav-vector-mega__banner:hover .nav-vector-mega__chev {
+  color: #888888;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .grain {
     opacity: 0;
@@ -393,29 +540,44 @@ header nav .group:hover > div[class*="absolute"] {
 }
 
 .home-hero-surface {
-  background-color: #fafaf7;
+  background-color: #ffffff;
 }
 
-/* Hero wireframe: calm surface — no striped grid overlay */
+/* Hero wireframe: calm surface — top band reads clean white; imagery sits in staged band */
 .home-hero-surface--wireframe {
-  background-color: #fafaf7;
+  background-color: #ffffff;
   background-image: none;
 }
 
 .home-hero-surface .home-section--hero-wireframe {
-  padding-bottom: 5.75rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
   .home-hero-surface .home-section--hero-wireframe {
-    padding-bottom: 7.25rem;
+    padding-bottom: 3.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .home-hero-surface .home-section--hero-wireframe {
-    padding-bottom: 8.25rem;
+    padding-bottom: 4rem;
   }
+}
+
+/* Hero: grey band with centered product snippet (wireframe — no photography) */
+.home-hero-visual-stage {
+  position: relative;
+  isolation: isolate;
+  background-color: #e8e8e5;
+}
+
+.home-hero-visual-stage__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: #e8e8e5;
+  background-image: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) clamp(32px, 5vw, 64px));
 }
 
 .home-hero-eyebrow {
@@ -446,6 +608,13 @@ header nav .group:hover > div[class*="absolute"] {
   border: 1px solid #e5e5e2;
   background: #ffffff;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.home-hero-convo.home-hero-convo--elevated {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.92) inset,
+    0 28px 64px rgba(0, 0, 0, 0.22),
+    0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .home-hero-convo__chrome {
@@ -1138,9 +1307,6 @@ header nav .group:hover > div[class*="absolute"] {
 .home-testimonial-card__rail > * {
   position: relative;
   z-index: 1;
-}
-
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .home-platform-steps .home-platform-card__step {
