@@ -25,9 +25,11 @@
         },
       };
     </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23111111'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='14' font-weight='400' letter-spacing='1' fill='white'%3EVo%3C/text%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="bg-white text-[#111111] font-sans font-light antialiased overflow-x-hidden">
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
     <div class="fixed inset-0 pointer-events-none z-[60] grain opacity-[0.35]" aria-hidden="true"></div>
 
     <header class="fixed top-0 left-0 right-0 z-[100] glass-header border-b border-[#E5E5E2]/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,1,1)]" data-header>
@@ -56,7 +58,7 @@
                 <a href="vector-support.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">How we support you</a>
                 <a href="vector-support.html#implementation-speed" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Implementation speed</a>
                 <a href="vector-support.html#customer-care" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Customer care</a>
-                <a href="product.html#security-enterprise" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
+                <a href="vector-security.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
               </div>
             </div>
           </div>
@@ -94,7 +96,8 @@
         </div>
       </div>
     </header>
-    <main class="hero-below-fixed-nav">
+
+    <main id="main-content" class="hero-below-fixed-nav">
 
       <div class="home-section reveal-up">
         <div class="home-section__inner home-section__inner--narrow">
@@ -162,6 +165,85 @@
         <a href="index.html#contact" class="font-mono text-[11px] uppercase tracking-[1.2px] text-white bg-[#111111] px-5 py-3 hover:bg-[#555555]">Request a Demo</a>
       </div>
     </main>
+
+    <footer class="border-t border-[#E5E5E2] bg-white px-6 md:px-10 lg:px-14">
+      <div class="footer-newsletter-band border-b border-[#E5E5E2]" aria-labelledby="footer-email-heading">
+        <div class="max-w-[72rem] mx-auto py-10 md:py-12 lg:py-14">
+          <div class="grid lg:grid-cols-12 gap-8 md:gap-10 lg:gap-12 lg:items-end">
+            <div class="lg:col-span-5 space-y-3">
+              <p class="font-mono text-[10px] uppercase tracking-[0.14em] text-[#888888]">Email list</p>
+              <p id="footer-email-heading" class="text-[15px] md:text-[16px] leading-[1.72] text-[#555555] max-w-md">
+                Updates on demand reallocation and Vector (launching soon).
+              </p>
+            </div>
+            <div class="lg:col-span-7 lg:pl-4">
+              <div class="w-full max-w-xl lg:ml-auto space-y-4">
+                <p id="footer-email-form-heading" class="font-display text-[clamp(1rem,2vw,1.2rem)] font-light leading-snug text-[#111111] tracking-tight max-w-md">
+                  Get the latest demand reallocation and Vector&nbsp;insights.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-lg" action="#" method="post" aria-labelledby="footer-email-form-heading">
+                  <label for="footer-email-news" class="sr-only">Email address</label>
+                  <input id="footer-email-news" name="email" type="email" required placeholder="you@airline.com" class="flex-1 min-w-0 border border-[#E5E5E2] bg-[#FAFAF7] px-4 py-3 text-[15px] text-[#111111] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#111111]/40" autocomplete="email" />
+                  <button type="submit" class="font-mono text-[11px] uppercase tracking-[1.2px] bg-[#111111] text-white px-6 py-3 hover:bg-[#333333] transition-colors shrink-0">Sign up</button>
+                </form>
+                <p class="text-[12px] leading-relaxed text-[#999999]">Connect this form to your email stack.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-14 md:pt-16 pb-12">
+        <div class="max-w-[72rem] mx-auto flex flex-col lg:flex-row gap-14 lg:justify-between lg:items-start">
+          <div class="shrink-0 max-w-xs">
+            <div class="flex items-center gap-3">
+              <span class="h-9 w-9 bg-[#111111] grid place-items-center text-white font-mono text-[12px] tracking-[1.2px] uppercase" aria-hidden="true">Vo</span>
+              <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#444444]">Volantio</span>
+            </div>
+            <p class="mt-5 text-sm leading-[22px] text-[#444444]">
+              Spark win-win moments for businesses and consumers by finding the flexibility in anyone&rsquo;s plans.
+            </p>
+            <p class="mt-3 text-xs font-mono uppercase tracking-[0.1em] text-[#AAAAAA] leading-relaxed">Pioneering · Collaborative · Decisive · Trusted</p>
+          </div>
+          <nav class="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-10 font-mono text-[11px] uppercase tracking-[1.2px] flex-1 max-w-4xl" aria-label="Footer">
+            <div class="space-y-3">
+              <p class="text-[#111111]">Vector</p>
+              <a href="product.html" class="block text-[#888888] hover:text-[#111111]">Overview</a>
+              <a href="vector-how-it-works.html" class="block text-[#888888] hover:text-[#111111]">How It Works</a>
+              <a href="vector-arbitrage.html" class="block text-[#888888] hover:text-[#111111]">Arbitrage</a>
+              <a href="vector-oversell.html" class="block text-[#888888] hover:text-[#111111]">Oversell</a>
+              <a href="vector-signals.html" class="block text-[#888888] hover:text-[#111111]">Signals</a>
+              <a href="vector-security.html" class="block text-[#888888] hover:text-[#111111]">Security &amp; Trust</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Resources</p>
+              <a href="resources.html#research" class="block text-[#888888] hover:text-[#111111]">Research &amp; white papers</a>
+              <a href="resources.html#stories" class="block text-[#888888] hover:text-[#111111]">Customer stories</a>
+              <a href="resources.html#case-studies" class="block text-[#888888] hover:text-[#111111]">Stories, cases &amp; quotes</a>
+              <a href="resources.html#results" class="block text-[#888888] hover:text-[#111111]">Results</a>
+              <a href="resources.html#news" class="block text-[#888888] hover:text-[#111111]">News &amp; Press</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Company</p>
+              <a href="about.html" class="block text-[#888888] hover:text-[#111111]">About Volantio</a>
+              <a href="about.html#careers" class="block text-[#888888] hover:text-[#111111]">Careers</a>
+              <a href="index.html#contact" class="block text-[#888888] hover:text-[#111111]">Request a Demo</a>
+              <a href="mailto:hello@volantio.com" class="block text-[#888888] hover:text-[#111111]">Contact</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Legal</p>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Security</a>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Privacy Policy</a>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Subprocessors</a>
+            </div>
+          </nav>
+        </div>
+        <div class="max-w-[72rem] mx-auto mt-14 pt-8 border-t border-[#E5E5E2] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">© <span id="footer-year"></span> Volantio Inc.</p>
+          <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">Vector</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

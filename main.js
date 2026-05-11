@@ -1,5 +1,5 @@
 (function () {
-  const yearEl = document.getElementById("year");
+  const yearEl = document.getElementById("footer-year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 })();
 
@@ -226,4 +226,57 @@
 
     select(0);
   });
+})();
+
+(function initMobileNav() {
+  const btn = document.getElementById("mobile-nav-btn");
+  const nav = document.getElementById("mobile-nav");
+  const closeBtn = document.getElementById("mobile-nav-close");
+  const backdrop = document.getElementById("mobile-nav-backdrop");
+
+  if (!btn || !nav) return;
+
+  function open() {
+    nav.classList.add("is-open");
+    nav.setAttribute("aria-hidden", "false");
+    btn.setAttribute("aria-expanded", "true");
+    document.body.classList.add("mobile-nav-open");
+    closeBtn && closeBtn.focus();
+  }
+
+  function close() {
+    nav.classList.remove("is-open");
+    nav.setAttribute("aria-hidden", "true");
+    btn.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("mobile-nav-open");
+    btn.focus();
+  }
+
+  btn.addEventListener("click", open);
+  closeBtn && closeBtn.addEventListener("click", close);
+  backdrop && backdrop.addEventListener("click", close);
+
+  nav.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+
+  // Trap focus inside the drawer while open
+  nav.addEventListener("keydown", (e) => {
+    if (e.key !== "Tab" || !nav.classList.contains("is-open")) return;
+    const focusable = Array.from(
+      nav.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')
+    ).filter((el) => el.offsetParent !== null);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  // Close nav when viewport reaches desktop width
+  const mq = window.matchMedia("(min-width: 1024px)");
+  mq.addEventListener("change", (e) => { if (e.matches) close(); });
 })();

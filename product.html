@@ -42,9 +42,11 @@
         },
       };
     </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23111111'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='14' font-weight='400' letter-spacing='1' fill='white'%3EVo%3C/text%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="bg-white text-[#111111] font-sans font-light antialiased overflow-x-hidden">
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
 
     <div class="fixed inset-0 pointer-events-none z-[60] grain opacity-[0.35]" aria-hidden="true"></div>
 
@@ -78,7 +80,7 @@
                 <a href="vector-support.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">How we support you</a>
                 <a href="vector-support.html#implementation-speed" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Implementation speed</a>
                 <a href="vector-support.html#customer-care" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Customer care</a>
-                <a href="product.html#security-enterprise" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
+                <a href="vector-security.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
               </div>
             </div>
           </div>
@@ -110,7 +112,6 @@
             </div>
           </div>
         </nav>
-
         <div class="flex items-center gap-2 sm:gap-3 shrink-0">
           <a href="mailto:hello@volantio.com?subject=Contact%20Volantio" class="hidden sm:inline-flex font-mono text-[11px] sm:text-xs tracking-[1.2px] uppercase text-[#444444] px-3 sm:px-4 py-3 sm:py-5 hover:text-[#111111] transition-colors">Contact</a>
           <a href="index.html#contact" class="inline-flex font-mono text-[11px] sm:text-xs tracking-[1.2px] uppercase text-white bg-[#111111] px-4 sm:px-6 py-4 sm:py-5 border-0 hover:bg-[#555555] transition-colors whitespace-nowrap">Request a Demo</a>
@@ -119,25 +120,31 @@
     </header>
 
 
-    <main>
+
+    <main id="main-content">
 
       <!-- Hero — split layout -->
-      <section class="relative min-h-screen w-full bg-white overflow-hidden hero-below-fixed-nav flex flex-col lg:flex-row">
+      <section class="relative w-full bg-white overflow-hidden flex flex-col lg:flex-row" style="padding-top:72px; min-height:88vh;">
 
         <!-- Left: copy -->
-        <div class="relative z-10 flex flex-col justify-between lg:w-[52%] px-8 md:px-10 lg:px-14 pt-16 pb-12 lg:pb-0">
+        <div class="relative z-10 flex flex-col justify-between lg:w-[52%] px-8 md:px-10 lg:px-14 py-12 lg:py-16">
 
           <!-- Top: eyebrow + headline + CTAs -->
           <div class="space-y-8 max-w-xl">
-            <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555]">Vector overview</p>
+            <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#555555]">Vector by Volantio</p>
 
             <h1 class="font-display text-[clamp(2.6rem,5vw,4rem)] leading-[1.02] font-light tracking-tight text-[#111111]">
-              Demand reallocation&mdash;<br>executed with speed, accuracy, and safety.
+              The AI-enabled platform that safely turns intelligence into action.
             </h1>
 
-            <p class="text-base leading-[26px] text-[#555555] max-w-md">
-              <strong class="font-medium text-[#444444]">Insight to action</strong> on your stack: Vector operationalizes demand reallocation inside the policies you set&mdash;from signal to governed PSS write&mdash;without asking you to replace core systems. Your team defines what &ldquo;good&rdquo; looks like; Vector runs at the speed networks operate.
-            </p>
+            <div class="space-y-3 max-w-md">
+              <p class="text-base leading-[26px] text-[#555555]">
+                Vector helps airlines identify and act on valuable demand reallocation opportunities with speed, confidence, and accuracy.
+              </p>
+              <p class="text-base leading-[26px] text-[#555555]">
+                Built on over a decade of operational expertise, Vector connects operational intelligence, workflow coordination, and execution into a platform designed for real airline environments.
+              </p>
+            </div>
 
             <div class="flex flex-wrap gap-4 pt-2">
               <a
@@ -147,27 +154,11 @@
                 Request a Demo
               </a>
               <a
-                href="mailto:hello@volantio.com?subject=Vector%20product%20overview"
+                href="vector-how-it-works.html"
                 class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-[#444444] px-6 py-4 border border-[#E5E5E2] hover:border-[#111111]/30 hover:text-[#111111] transition-all duration-300"
               >
-                Request security documentation
+                See How Vector Works
               </a>
-            </div>
-          </div>
-
-          <!-- Bottom: trust strip -->
-          <div class="mt-16 lg:mt-0 lg:pb-16 space-y-4">
-            <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">
-              Trusted by airlines including Emirates, Lufthansa, Singapore Airlines, Qatar Airways
-            </p>
-            <div class="flex flex-wrap items-center gap-6">
-              <span class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#444444] font-medium">Emirates</span>
-              <span class="w-px h-3 bg-[#E5E5E2]" aria-hidden="true"></span>
-              <span class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#444444] font-medium">Lufthansa</span>
-              <span class="w-px h-3 bg-[#E5E5E2]" aria-hidden="true"></span>
-              <span class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#444444] font-medium">Singapore Airlines</span>
-              <span class="w-px h-3 bg-[#E5E5E2]" aria-hidden="true"></span>
-              <span class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#444444] font-medium">Qatar Airways</span>
             </div>
           </div>
 
@@ -211,710 +202,262 @@
         </div>
       </section>
 
-      <!-- Platform overview — diagram zone (B3) -->
-      <section id="platform-overview" class="relative bg-white border-t border-[#E5E5E2] home-section" aria-labelledby="platform-overview-heading">
+      <!-- Positioning section -->
+      <section class="relative bg-[#F7F7F5] border-t border-[#E5E5E2] home-section">
         <div class="home-section__inner">
-        <div class="max-w-3xl mb-10 md:mb-12">
-          <p class="home-eyebrow">Platform overview</p>
-          <h2 id="platform-overview-heading" class="font-display text-[clamp(1.75rem,3.5vw,2.65rem)] leading-[1.06] font-light tracking-tight text-[#111111]">
-            From insight to action&mdash;without losing control.
-          </h2>
-        </div>
-        <div class="max-w-5xl mx-auto border border-[#E5E5E2] bg-[#FAFAF7] px-6 md:px-10 py-10 md:py-12">
-          <p class="font-mono text-[11px] uppercase tracking-[1.3px] text-[#666666] text-center mb-8 md:mb-10 leading-relaxed">
-            Identify signals &rarr; score policy fit &rarr; act in PSS &amp; channels &rarr; evidence out.
-          </p>
-          <div class="flex flex-col md:flex-row flex-wrap items-stretch justify-center gap-3 md:gap-2">
-            <div class="flex-1 min-w-[140px] bg-white border border-[#E5E5E2] px-4 py-4 text-center">
-              <p class="font-mono text-[10px] uppercase tracking-[1.2px] text-[#888888] mb-1">Identify</p>
-              <p class="text-[13px] text-[#111111]">Loads, disruption, eligibility, rules</p>
-            </div>
-            <div class="hidden md:flex items-center text-[#CCCCCC] px-1">&rarr;</div>
-            <div class="flex-1 min-w-[140px] bg-white border border-[#E5E5E2] px-4 py-4 text-center">
-              <p class="font-mono text-[10px] uppercase tracking-[1.2px] text-[#888888] mb-1">Score</p>
-              <p class="text-[13px] text-[#111111]">Policy fit, traveler context, commercial value</p>
-            </div>
-            <div class="hidden md:flex items-center text-[#CCCCCC] px-1">&rarr;</div>
-            <div class="flex-1 min-w-[140px] bg-white border border-[#E5E5E2] px-4 py-4 text-center">
-              <p class="font-mono text-[10px] uppercase tracking-[1.2px] text-[#888888] mb-1">Act</p>
-              <p class="text-[13px] text-[#111111]">PSS writes &amp; passenger outreach</p>
-            </div>
-            <div class="hidden md:flex items-center text-[#CCCCCC] px-1">&rarr;</div>
-            <div class="flex-1 min-w-[140px] bg-[#111111] border border-[#111111] px-4 py-4 text-center">
-              <p class="font-mono text-[10px] uppercase tracking-[1.2px] text-[#888888] mb-1">Evidence</p>
-              <p class="text-[13px] text-white/90">Audit trail &amp; proof</p>
-            </div>
-          </div>
-        </div>
-        <div class="max-w-5xl mx-auto mt-12 md:mt-14 pt-10 border-t border-[#E5E5E2]">
-          <p class="home-eyebrow home-eyebrow--plain mb-3">Go deeper</p>
-          <p class="text-[15px] leading-[1.75] text-[#555555] max-w-2xl mb-6">
-            Walk the discovery-to-execution path, then explore how each agent applies the same layer to different commercial and operational pressure points.
-          </p>
-          <div class="flex flex-wrap gap-2">
-            <a href="vector-how-it-works.html" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] border border-[#D4D4D4] px-4 py-2.5 hover:border-[#111111]/40 transition-colors">How It Works</a>
-            <a href="vector-arbitrage.html" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] border border-[#E5E5E2] bg-white px-4 py-2.5 hover:border-[#111111]/30 hover:text-[#111111] transition-colors">Arbitrage</a>
-            <a href="vector-oversell.html" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] border border-[#E5E5E2] bg-white px-4 py-2.5 hover:border-[#111111]/30 hover:text-[#111111] transition-colors">Oversell</a>
-            <a href="vector-signals.html" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] border border-[#E5E5E2] bg-white px-4 py-2.5 hover:border-[#111111]/30 hover:text-[#111111] transition-colors">Signals</a>
-            <a href="vector-roadmap.html" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] border border-[#E5E5E2] bg-white px-4 py-2.5 hover:border-[#111111]/30 hover:text-[#111111] transition-colors">Roadmap</a>
-            <a href="vector-support.html" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] border border-[#E5E5E2] bg-white px-4 py-2.5 hover:border-[#111111]/30 hover:text-[#111111] transition-colors">How we support you</a>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- Capabilities — outcome-first tiles (B5) -->
-      <section id="capabilities" class="relative bg-[#F7F7F5] border-t border-[#E5E5E2] home-section overflow-hidden">
-        <div class="home-section__inner">
-        <p class="mb-10 text-[14px] leading-[1.75] text-[#555555] max-w-3xl border-l-2 border-[#E5E5E2] pl-4">
-          Same execution loop as the overview above&mdash;<span class="text-[#111111]">Identify &middot; Score &middot; Act</span>, ending in auditable evidence. Below are the packaged scenarios most teams turn on first.
-        </p>
-        <div class="max-w-3xl mb-12">
-          <p class="home-eyebrow">What you can run on day one</p>
-          <h2 class="font-display text-[clamp(1.85rem,3.5vw,2.65rem)] leading-[1.06] font-light tracking-tight text-[#111111]">
-            Pre-built capabilities across common reallocation scenarios.
-          </h2>
-          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555] max-w-xl">
-            Most airlines start with a focused set of high-impact scenarios&mdash;then expand on the same execution layer.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#E5E5E2] border border-[#E5E5E2] max-w-5xl">
-          <div class="bg-white p-8 md:p-10 flex flex-col gap-4">
-            <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Load &amp; cabin balance</p>
-            <p class="font-display text-[1.25rem] font-light text-[#111111]">Recover yield across over- and under-loaded departures.</p>
-            <p class="text-[13px] leading-[1.7] text-[#666666]">Move voluntary travelers to balance the network while protecting revenue per seat.</p>
-            <a href="vector-arbitrage.html" class="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">Arbitrage agent <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="bg-[#FAFAF7] p-8 md:p-10 flex flex-col gap-4">
-            <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Oversell &amp; voluntary recovery</p>
-            <p class="font-display text-[1.25rem] font-light text-[#111111]">Resolve imbalance before it becomes a gate event.</p>
-            <p class="text-[13px] leading-[1.7] text-[#666666]">Earlier voluntary moves, clearer offers, less disruption cost.</p>
-            <a href="vector-oversell.html" class="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">Oversell agent <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="bg-[#FAFAF7] p-8 md:p-10 flex flex-col gap-4">
-            <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Disruption &amp; network signals</p>
-            <p class="font-display text-[1.25rem] font-light text-[#111111]">Act while there is still time to reallocate cleanly.</p>
-            <p class="text-[13px] leading-[1.7] text-[#666666]">Surface shifts in demand and capacity so execution stays ahead of the checkpoint.</p>
-            <a href="vector-signals.html" class="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">Signals agent <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="bg-white p-8 md:p-10 flex flex-col gap-4">
-            <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Custom scenarios</p>
-            <p class="font-display text-[1.25rem] font-light text-[#111111]">Extend the same layer to your own triggers and approvals.</p>
-            <p class="text-[13px] leading-[1.7] text-[#666666]">Package new rules on top of proven airline execution paths.</p>
-            <a href="index.html#contact" class="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">Talk to us <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- How Vector works (B4) -->
-      <section id="how-execution" class="relative bg-white border-t border-[#E5E5E2] home-section home-section--roomy">
-        <div class="home-section__inner flex flex-col gap-14">
-
-          <!-- Heading -->
-          <div class="max-w-2xl">
-            <p class="home-eyebrow">How execution works</p>
-            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] leading-[1.05] font-light tracking-tight text-[#111111]">
-              Identify. Score. Act.
+          <div class="max-w-2xl mx-auto text-center">
+            <p class="home-eyebrow">From insight to action</p>
+            <h2 class="font-display text-[clamp(1.85rem,3.5vw,2.65rem)] leading-[1.06] font-light tracking-tight text-[#111111]">
+              Operational intelligence only matters when teams can act on it.
             </h2>
-            <p class="mt-5 text-[14px] leading-[1.75] text-[#555555] max-w-lg">
-              The loop Vector runs across departures: surface opportunities, rank them for accuracy, execute only what your policies allow&mdash;with every step logged.
-            </p>
-            <p class="mt-4 text-[13px] text-[#888888] max-w-lg">
-              For a narrative of when teams engage Vector day to day, see <a href="vector-how-it-works.html" class="text-[#555555] underline underline-offset-2 decoration-[#CCCCCC] hover:decoration-[#111111] hover:text-[#111111]">How It Works</a>.
+            <p class="mt-5 text-[14px] leading-[1.75] text-[#555555]">
+              Airlines already have visibility across revenue systems, workflows, and customer platforms — the challenge is turning those fragmented insights into coordinated action before the opportunity disappears.
             </p>
           </div>
 
-          <!-- 3-step cards with real scenario -->
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-[#E5E5E2] border border-[#E5E5E2]">
+          <!-- Insight cards — visual layout -->
+          <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <!-- Step 01: Identify -->
-            <div class="bg-white px-10 py-12 flex flex-col gap-6">
-              <div class="flex items-start justify-between">
-                <div class="flex items-center gap-3">
-                  <svg class="w-4 h-4 text-[#555555] shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <circle cx="8" cy="8" r="2"/><path d="M8 2v2M8 12v2M2 8h2M12 8h2M4.22 4.22l1.42 1.42M10.36 10.36l1.42 1.42M4.22 11.78l1.42-1.42M10.36 5.64l1.42-1.42"/>
+            <!-- Card 1: Detect Opportunities -->
+            <div class="bg-white border border-[#E5E5E2] flex flex-col overflow-hidden">
+              <!-- Visual zone -->
+              <div class="bg-[#F5F5F3] h-[188px] flex items-center justify-center p-8 overflow-hidden">
+                <svg viewBox="0 0 240 110" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Fragmented signal sources — scattered boxes representing disparate systems -->
+                  <rect x="8" y="12" width="72" height="44" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <circle cx="44" cy="34" r="5" fill="#D8D8D5"/>
+                  <rect x="136" y="6" width="84" height="46" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <circle cx="178" cy="29" r="5" fill="#D8D8D5"/>
+                  <rect x="58" y="66" width="72" height="38" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <circle cx="94" cy="85" r="5" fill="#D8D8D5"/>
+                  <!-- Dashed connectors suggesting convergence toward a single point -->
+                  <line x1="80" y1="34" x2="136" y2="29" stroke="#DEDEDB" stroke-width="1" stroke-dasharray="3 2"/>
+                  <line x1="100" y1="66" x2="152" y2="50" stroke="#DEDEDB" stroke-width="1" stroke-dasharray="3 2"/>
+                </svg>
+              </div>
+              <!-- Text zone -->
+              <div class="p-6 flex flex-col gap-2.5">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 shrink-0 text-[#888888]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <rect x="1.5" y="1.5" width="5.5" height="5.5" rx="0.5"/>
+                    <rect x="9" y="1.5" width="5.5" height="5.5" rx="0.5"/>
+                    <rect x="1.5" y="9" width="5.5" height="5.5" rx="0.5"/>
+                    <rect x="9" y="9" width="5.5" height="5.5" rx="0.5"/>
                   </svg>
-                  <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#111111] font-medium">Identify</p>
+                  <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] font-medium">Detect Opportunities</p>
                 </div>
-                <span class="font-mono text-[11px] text-[#888888]">01</span>
-              </div>
-              <p class="text-[13px] leading-[1.7] text-[#555555]">Surface reallocation opportunities across departures&mdash;load, disruption, eligibility, and business rules you maintain in Vector and your PSS.</p>
-
-              <!-- Live scan visual -->
-              <div class="border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4 space-y-3">
-                <div class="flex items-center justify-between mb-1">
-                  <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#888888]">Network scan · live</p>
-                  <span class="flex items-center gap-1"><span class="h-1 w-1 rounded-full bg-[#555555] animate-pulse"></span><span class="font-mono text-[11px] text-[#666666]">30s</span></span>
-                </div>
-                <div class="space-y-2">
-                  <div class="flex items-center gap-3">
-                    <span class="font-mono text-[11px] text-[#888888] w-8 shrink-0">AA123</span>
-                    <div class="flex-1 h-1 bg-[#EEEEEA] overflow-hidden"><div class="h-full bg-[#333333]" style="width:100%"></div></div>
-                    <span class="font-mono text-[11px] text-[#333333] w-8 text-right">109%</span>
-                    <span class="font-mono text-[12px] text-[#CC5555]">↑ flag</span>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <span class="font-mono text-[11px] text-[#888888] w-8 shrink-0">AA456</span>
-                    <div class="flex-1 h-1 bg-[#EEEEEA] overflow-hidden"><div class="h-full bg-[#AAAAAA]" style="width:66%"></div></div>
-                    <span class="font-mono text-[11px] text-[#666666] w-8 text-right">66%</span>
-                    <span class="font-mono text-[12px] text-[#777777]">— ok</span>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <span class="font-mono text-[11px] text-[#888888] w-8 shrink-0">AA789</span>
-                    <div class="flex-1 h-1 bg-[#EEEEEA] overflow-hidden"><div class="h-full bg-[#CCCCCC]" style="width:62%"></div></div>
-                    <span class="font-mono text-[11px] text-[#888888] w-8 text-right">62%</span>
-                    <span class="font-mono text-[12px] text-[#777777]">— ok</span>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <span class="font-mono text-[11px] text-[#888888] w-8 shrink-0">AA201</span>
-                    <div class="flex-1 h-1 bg-[#EEEEEA] overflow-hidden"><div class="h-full bg-[#BBBBBB]" style="width:82%"></div></div>
-                    <span class="font-mono text-[11px] text-[#888888] w-8 text-right">82%</span>
-                    <span class="font-mono text-[12px] text-[#777777]">— ok</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Example callout -->
-              <div class="mt-auto border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4">
-                <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#888888] mb-2">Example signal</p>
-                <p class="text-[12px] leading-[1.6] text-[#444444]">AA123 is at 109% load. AA456 on the same route, same day, has 34 open seats.</p>
+                <p class="text-[13px] leading-[1.75] text-[#666666]">Surface demand reallocation opportunities across operational and commercial systems in real time.</p>
               </div>
             </div>
 
-            <!-- Step 02: Decide -->
-            <div class="bg-white px-10 py-12 flex flex-col gap-6">
-              <div class="flex items-start justify-between">
-                <div class="flex items-center gap-3">
-                  <svg class="w-4 h-4 text-[#555555] shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M3 8h10M8 3l5 5-5 5"/>
+            <!-- Card 2: Coordinate Responses -->
+            <div class="bg-white border border-[#E5E5E2] flex flex-col overflow-hidden">
+              <div class="bg-[#F5F5F3] h-[188px] flex items-center justify-center p-8 overflow-hidden">
+                <svg viewBox="0 0 240 110" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Stacked aligned lines: coordinated workflow rows -->
+                  <rect x="10" y="12" width="185" height="11" rx="2" fill="#E2E2DF"/>
+                  <rect x="10" y="31" width="140" height="11" rx="2" fill="#EAEAE7"/>
+                  <rect x="10" y="50" width="210" height="11" rx="2" fill="#E2E2DF"/>
+                  <rect x="10" y="69" width="100" height="11" rx="2" fill="#EAEAE7"/>
+                  <rect x="10" y="88" width="165" height="11" rx="2" fill="#E2E2DF"/>
+                  <!-- Approval badge top-right -->
+                  <rect x="218" y="8" width="18" height="18" rx="2" fill="#D4D4D0"/>
+                  <path d="M222 17l2.5 2.5 4-5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="p-6 flex flex-col gap-2.5">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 shrink-0 text-[#888888]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <path d="M13 2H3a1 1 0 00-1 1v8a1 1 0 001 1h3l2 2 2-2h3a1 1 0 001-1V3a1 1 0 00-1-1z" stroke-linejoin="round"/>
                   </svg>
-                  <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#111111] font-medium">Score</p>
+                  <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] font-medium">Coordinate Responses</p>
                 </div>
-                <span class="font-mono text-[11px] text-[#888888]">02</span>
-              </div>
-              <p class="text-[13px] leading-[1.7] text-[#555555]">Rank options for accuracy: policy fit, traveler context, operational risk, and commercial value&mdash;so what you execute matches how your airline defines &ldquo;good.&rdquo;</p>
-
-              <!-- Policy evaluation visual -->
-              <div class="border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4 space-y-3">
-                <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#888888] mb-1">Policy evaluation · AA123</p>
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[11px] text-[#555555]">Flexibility score</span>
-                    <div class="flex items-center gap-1.5">
-                      <span class="font-mono text-[12px] text-[#444444]">0.74</span>
-                      <svg class="w-3 h-3 text-[#555555]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="text-[11px] text-[#555555]">Compensation cost</span>
-                    <div class="flex items-center gap-1.5">
-                      <span class="font-mono text-[12px] text-[#444444]">$1,517</span>
-                      <svg class="w-3 h-3 text-[#555555]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="text-[11px] text-[#555555]">Blackout window</span>
-                    <div class="flex items-center gap-1.5">
-                      <span class="font-mono text-[12px] text-[#444444]">None</span>
-                      <svg class="w-3 h-3 text-[#555555]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between border-t border-[#E5E5E2] pt-2 mt-1">
-                    <span class="text-[11px] font-medium text-[#111111]">Net yield delta</span>
-                    <span class="font-mono text-[11px] font-medium text-[#111111]">+$18,200</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Example callout -->
-              <div class="mt-auto border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4">
-                <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#888888] mb-2">Decision made</p>
-                <p class="text-[12px] leading-[1.6] text-[#444444]">12 passengers selected for reallocation to AA456. Flexibility score + compensation cost both within policy.</p>
+                <p class="text-[13px] leading-[1.75] text-[#666666]">Align workflows, operational rules, approvals, and customer experiences before execution begins.</p>
               </div>
             </div>
 
-            <!-- Step 03: Execute -->
-            <div class="bg-white px-10 py-12 flex flex-col gap-6">
-              <div class="flex items-start justify-between">
-                <div class="flex items-center gap-3">
-                  <svg class="w-4 h-4 text-[#555555] shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M3 8l4 4 6-7"/>
+            <!-- Card 3: Execute with Control -->
+            <div class="bg-white border border-[#E5E5E2] flex flex-col overflow-hidden">
+              <div class="bg-[#F5F5F3] h-[188px] flex items-center justify-center p-8 overflow-hidden">
+                <svg viewBox="0 0 240 110" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Smooth ascending execution path -->
+                  <path d="M 10 95 C 50 95, 80 22, 175 22" stroke="#C4C4C1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <!-- Control/status blocks at destination (right) -->
+                  <rect x="178" y="55" width="52" height="15" rx="2" fill="#E2E2DF"/>
+                  <rect x="188" y="76" width="36" height="15" rx="2" fill="#EAEAE7"/>
+                  <rect x="180" y="97" width="48" height="12" rx="2" fill="#E2E2DF"/>
+                  <!-- Small dot at path end -->
+                  <circle cx="175" cy="22" r="3" fill="#BABAB7"/>
+                </svg>
+              </div>
+              <div class="p-6 flex flex-col gap-2.5">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 shrink-0 text-[#888888]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <path d="M2 11l3.5-4.5 3 2.5L13 3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="1" y1="13.5" x2="15" y2="13.5" stroke-linecap="round"/>
                   </svg>
-                  <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#111111] font-medium">Act</p>
+                  <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] font-medium">Execute with Control</p>
                 </div>
-                <span class="font-mono text-[11px] text-[#888888]">03</span>
-              </div>
-              <p class="text-[13px] leading-[1.7] text-[#555555]">Execute approved actions in the PSS and notify travelers through your approved channels&mdash;every step logged from signal to confirmation.</p>
-              <!-- Passenger offer callout -->
-              <div class="border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4">
-                <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#888888] mb-3">What the passenger sees</p>
-                <div class="bg-white border border-[#E5E5E2] px-4 py-3 space-y-2">
-                  <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Dream Airways · Push notification</p>
-                  <p class="text-[12px] leading-[1.6] text-[#333333] font-medium">Change your flight for exclusive rewards.</p>
-                  <p class="text-[11px] leading-[1.6] text-[#666666]">We're offering select customers travel credit to move to a later flight. Check your alternatives below.</p>
-                  <div class="pt-2 flex items-center justify-between border-t border-[#F0F0EE]">
-                    <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Travel credit · 100 USD per guest</span>
-                    <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555]">Triggered by Vector</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Outcome callout -->
-              <div class="mt-auto border border-[#555555]/15 bg-[#555555]/[0.03] px-5 py-4">
-                <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#555555] mb-2">Outcome</p>
-                <p class="text-[12px] leading-[1.6] text-[#444444]">Reallocations confirmed in PSS. Revenue recovery: +$18,200. 0 denied boardings. Audit trail recorded.</p>
+                <p class="text-[13px] leading-[1.75] text-[#666666]">Operationalize actions safely through existing airline systems with full visibility and oversight.</p>
               </div>
             </div>
 
           </div>
-
         </div>
       </section>
 
-      <!-- PSS integration — fits your stack -->
-      <section class="relative bg-white border-t border-[#E5E5E2] home-section home-section--roomy overflow-hidden">
-        <div class="home-section__inner grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <!-- Operational capabilities -->
+      <section id="capabilities" class="relative bg-[#F7F7F5] border-t border-[#E5E5E2] home-section">
+        <div class="home-section__inner">
 
-          <!-- Left: copy -->
-          <div class="reveal-up">
-            <p class="home-eyebrow">PSS-native</p>
-            <h2 class="font-display text-[clamp(1.9rem,3.5vw,2.75rem)] leading-[1.06] font-light tracking-tight text-[#111111]">
-              Plugs into the systems where bookings actually live.
+          <div class="max-w-3xl mb-12">
+            <p class="home-eyebrow">Operational capabilities</p>
+            <h2 class="font-display text-[clamp(1.85rem,3.5vw,2.65rem)] leading-[1.06] font-light tracking-tight text-[#111111]">
+              Built around real airline workflows
             </h2>
-            <div class="mt-8 space-y-5 max-w-sm">
-              <p class="text-[14px] leading-[1.75] text-[#444444]">
-                Certified and supported paths for major airline platforms&mdash;so execution is real, not theoretical.
-              </p>
-              <p class="text-[14px] leading-[1.75] text-[#444444]">
-                When travelers need to cooperate, Vector continues in your brand&mdash;not a third-party marketplace.
-              </p>
-            </div>
+            <p class="mt-4 text-[15px] leading-[1.75] text-[#555555] max-w-xl">
+              Vector operationalizes demand reallocation through capabilities designed to support operational coordination, revenue optimization, and passenger flexibility management.
+            </p>
+          </div>
 
-            <!-- PSS partner list -->
-            <div class="mt-10 pt-8 border-t border-[#E5E5E2]">
-              <p class="font-mono text-[12px] uppercase tracking-[1.6px] text-[#888888] mb-5">Certified integrations</p>
-              <div class="flex flex-wrap items-center gap-x-8 gap-y-4">
-                <span class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#111111] font-medium">Amadeus</span>
-                <span class="w-px h-3 bg-[#E5E5E2]" aria-hidden="true"></span>
-                <span class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#111111] font-medium">Navitaire</span>
-                <span class="w-px h-3 bg-[#E5E5E2]" aria-hidden="true"></span>
-                <span class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#111111] font-medium">Sabre</span>
-                <span class="w-px h-3 bg-[#E5E5E2]" aria-hidden="true"></span>
-                <span class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#111111] font-medium">PROS</span>
-              </div>
+          <!-- Three agent cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#E5E5E2] border border-[#E5E5E2]">
+            <div class="bg-white p-8 md:p-10 flex flex-col gap-4">
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Arbitrage</p>
+              <p class="font-display text-[1.2rem] font-light text-[#111111]">Capture demand reallocation opportunities.</p>
+              <p class="text-[13px] leading-[1.75] text-[#666666]">Move demand from constrained flights to lower-demand alternatives to recover seat value before departure.</p>
+              <a href="vector-arbitrage.html" class="mt-auto inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">
+                Arbitrage agent
+                <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+            <div class="bg-white p-8 md:p-10 flex flex-col gap-4 border-t md:border-t-0 md:border-l border-[#E5E5E2]">
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Oversell</p>
+              <p class="font-display text-[1.2rem] font-light text-[#111111]">Manage overbooking before it reaches the gate.</p>
+              <p class="text-[13px] leading-[1.75] text-[#666666]">Manage commercial and operational overbooking before it becomes a customer or airport problem.</p>
+              <a href="vector-oversell.html" class="mt-auto inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">
+                Oversell agent
+                <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+            <div class="bg-white p-8 md:p-10 flex flex-col gap-4 border-t md:border-t-0 md:border-l border-[#E5E5E2]">
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Signals</p>
+              <p class="font-display text-[1.2rem] font-light text-[#111111]">Guide demand toward available inventory.</p>
+              <p class="text-[13px] leading-[1.75] text-[#666666]">Identify flexible passengers and guide demand toward available inventory through proactive engagement.</p>
+              <a href="vector-signals.html" class="mt-auto inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">
+                Signals agent
+                <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
 
-          <!-- Right: stack architecture visual -->
-          <div class="reveal-hero-card">
-            <div class="bg-white border border-[#E5E5E2] overflow-hidden relative p-8 md:p-10">
-              <div class="relative z-10 space-y-2">
+          <!-- Custom Agent concept block -->
+          <div class="mt-4 border border-dashed border-[#CCCCCA] bg-[#FAFAF7] px-8 py-8 flex flex-col md:flex-row md:items-start gap-8 md:gap-14">
 
-                <!-- Label -->
-                <p class="font-mono text-[11px] uppercase tracking-[1.6px] text-[#666666] mb-6">How it fits into your stack</p>
-
-                <!-- Layer 1: Your existing stack -->
-                <div class="grid grid-cols-2 gap-2">
-                  <div class="bg-[#FAFAF7] border border-[#E5E5E2] px-4 py-4 flex flex-col gap-1.5">
-                    <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#666666]">Your RMS</p>
-                    <p class="text-[12px] text-[#444444]">Revenue management system</p>
-                    <p class="font-mono text-[12px] text-[#777777] mt-1">Forecasting · pricing · inventory</p>
-                  </div>
-                  <div class="bg-[#FAFAF7] border border-[#E5E5E2] px-4 py-4 flex flex-col gap-1.5">
-                    <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#666666]">Your PSS</p>
-                    <p class="text-[12px] text-[#444444]">Passenger service system</p>
-                    <p class="font-mono text-[12px] text-[#777777] mt-1">Amadeus · Navitaire · Sabre</p>
-                  </div>
-                </div>
-
-                <!-- Connector -->
-                <div class="flex flex-col items-center gap-1 py-1">
-                  <div class="flex items-center gap-2 w-full">
-                    <div class="flex-1 h-px bg-[#E5E5E2]"></div>
-                    <span class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#888888] shrink-0">reads signals ↓ · writes actions back ↑</span>
-                    <div class="flex-1 h-px bg-[#E5E5E2]"></div>
-                  </div>
-                  <div class="w-px h-5 bg-[#CCCCCC]"></div>
-                </div>
-
-                <!-- Layer 2: Volantio DRP -->
-                <div class="bg-[#F5F5F3] border border-[#E5E5E2] px-5 py-4">
-                  <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#888888] mb-1.5">Volantio DRP</p>
-                  <p class="text-[12px] text-[#333333]">Demand Reallocation Platform</p>
-                  <p class="font-mono text-[12px] text-[#666666] mt-1">Strategy · policy configuration · reporting</p>
-                </div>
-
-                <!-- Connector -->
-                <div class="flex flex-col items-center gap-1 py-1">
-                  <div class="w-px h-5 bg-[#CCCCCC]"></div>
-                  <div class="flex items-center gap-2 w-full">
-                    <div class="flex-1 h-px bg-[#E5E5E2]"></div>
-                    <span class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#888888] shrink-0">execution layer ↓</span>
-                    <div class="flex-1 h-px bg-[#E5E5E2]"></div>
-                  </div>
-                </div>
-
-                <!-- Layer 3: Vector -->
-                <div class="bg-[#111111] border border-[#111111] px-5 py-5 flex items-center justify-between">
-                  <div>
-                    <div class="flex items-center gap-2 mb-1.5">
-                      <span class="h-1.5 w-1.5 rounded-full bg-[#AAAAAA] animate-pulse shrink-0"></span>
-                      <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#666666]">Vector · AI execution layer</p>
-                    </div>
-                    <p class="text-[12px] text-[#CCCCCC]">Identify · Score · Act</p>
-                    <p class="font-mono text-[12px] text-[#999999] mt-1">Runs on every flight · every 30 seconds</p>
-                  </div>
-                  <div class="text-right space-y-1.5">
-                    <div class="flex items-center gap-1.5 justify-end">
-                      <span class="font-mono text-[12px] text-[#888888]">Arbitrage agent</span>
-                      <span class="w-1 h-1 rounded-full bg-white/20 shrink-0"></span>
-                    </div>
-                    <div class="flex items-center gap-1.5 justify-end">
-                      <span class="font-mono text-[12px] text-[#888888]">Oversell agent</span>
-                      <span class="w-1 h-1 rounded-full bg-white/20 shrink-0"></span>
-                    </div>
-                    <div class="flex items-center gap-1.5 justify-end">
-                      <span class="font-mono text-[12px] text-[#888888]">Signals agent</span>
-                      <span class="w-1 h-1 rounded-full bg-white/20 shrink-0"></span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Connector -->
-                <div class="flex flex-col items-center gap-1 py-1">
-                  <div class="w-px h-5 bg-[#CCCCCC]"></div>
-                  <div class="flex items-center gap-2 w-full">
-                    <div class="flex-1 h-px bg-[#E5E5E2]"></div>
-                    <span class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#888888] shrink-0">governed API · PSS write-back ↓</span>
-                    <div class="flex-1 h-px bg-[#E5E5E2]"></div>
-                  </div>
-                </div>
-
-                <!-- Layer 4: Outputs -->
-                <div class="grid grid-cols-3 gap-1.5">
-                  <div class="bg-[#FAFAF7] border border-[#E5E5E2] px-3 py-3 text-center">
-                    <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#666666] mb-1">Reallocations</p>
-                    <p class="text-[12px] text-[#666666]">Confirmed in PSS</p>
-                  </div>
-                  <div class="bg-[#FAFAF7] border border-[#E5E5E2] px-3 py-3 text-center">
-                    <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#666666] mb-1">Offers</p>
-                    <p class="text-[12px] text-[#666666]">Upgrades surfaced</p>
-                  </div>
-                  <div class="bg-[#FAFAF7] border border-[#E5E5E2] px-3 py-3 text-center">
-                    <p class="font-mono text-[12px] uppercase tracking-[1.2px] text-[#666666] mb-1">Audit trail</p>
-                    <p class="text-[12px] text-[#666666]">Every action logged</p>
-                  </div>
-                </div>
-
+            <!-- Left: copy -->
+            <div class="flex-1">
+              <div class="flex items-center gap-2.5 mb-4">
+                <svg class="w-4 h-4 shrink-0 text-[#999999]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <circle cx="8" cy="8" r="2.5"/>
+                  <path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4" stroke-linecap="round"/>
+                </svg>
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Custom Agent</p>
+                <span class="font-mono text-[9px] uppercase tracking-[1px] text-[#AAAAAA] border border-[#DDDDD9] px-2 py-0.5">Concept</span>
               </div>
+              <p class="font-display text-[1.2rem] font-light text-[#111111] mb-3">Define your own operational workflow.</p>
+              <p class="text-[13px] leading-[1.75] text-[#666666] max-w-lg">The same execution layer powering Arbitrage, Oversell, and Signals can be configured to support airline-defined operational workflows — irregular operations, load rebalancing, and use cases unique to your network.</p>
+              <a href="vector-roadmap.html" class="mt-5 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors">
+                See the roadmap
+                <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h8M6 2l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
+
           </div>
 
         </div>
       </section>
 
-      <!-- Passenger Engagement Layer -->
-      <section class="relative bg-white border-t border-[#E5E5E2] home-section home-section--roomy overflow-hidden">
-        <div class="home-section__inner flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
-
-          <!-- Left: copy -->
-          <div class="lg:w-[52%] shrink-0 space-y-8">
-            <div>
-              <p class="home-eyebrow">Traveler experience</p>
-              <h2 class="font-display text-[clamp(2rem,4vw,3rem)] leading-[1.05] font-light tracking-tight text-[#111111]">
-                The right offer. The right moment. Your voice.
-              </h2>
-              <p class="mt-6 text-[14px] leading-[1.75] text-[#555555] max-w-lg">
-                Reallocation works best when passengers get clear choices. Vector sequences offers across your channels with your tone and rules&mdash;improving acceptance and protecting your brand.
-              </p>
-            </div>
-
-            <!-- Channels -->
-            <div class="space-y-3">
-              <div class="flex items-start gap-4 border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4">
-                <div class="w-8 h-8 border border-[#E5E5E2] bg-white flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4 text-[#555555]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M2 5l6 4 6-4"/></svg>
-                </div>
-                <div>
-                  <p class="text-[13px] font-medium text-[#111111] mb-1">Airline app push notifications</p>
-                  <p class="text-[12px] leading-[1.65] text-[#666666]">Personalised in-app offers delivered directly to the passenger's phone. Accepted with a single tap.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4 border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4">
-                <div class="w-8 h-8 border border-[#E5E5E2] bg-white flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4 text-[#555555]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h12a1 1 0 011 1v8a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M1 4l7 5 7-5"/></svg>
-                </div>
-                <div>
-                  <p class="text-[13px] font-medium text-[#111111] mb-1">SMS and email fallback</p>
-                  <p class="text-[12px] leading-[1.65] text-[#666666]">When the app isn't the passenger's primary channel, Vector falls back to SMS or email automatically.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4 border border-[#E5E5E2] bg-[#FAFAF7] px-5 py-4">
-                <div class="w-8 h-8 border border-[#E5E5E2] bg-white flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4 text-[#555555]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg>
-                </div>
-                <div>
-                  <p class="text-[13px] font-medium text-[#111111] mb-1">Offer sequencing</p>
-                  <p class="text-[12px] leading-[1.65] text-[#666666]">Vector starts with the lowest compensation offer. It only escalates if needed — minimising cost while maximising voluntary uptake.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-2">
-              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">App, SMS, email&mdash;your stack · Sequencing rules you control · Brand-forward experience</p>
-            </div>
-          </div>
-
-          <!-- Right: notification visual -->
-          <div class="w-full lg:flex-1">
-            <div class="bg-[#F5F5F3] border border-[#E5E5E2] p-8 md:p-10 space-y-6">
-
-              <!-- Status header -->
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="h-1.5 w-1.5 rounded-full bg-[#AAAAAA] animate-pulse shrink-0"></span>
-                  <span class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#888888]">Vector · Passenger outreach</span>
-                </div>
-                <span class="font-mono text-[11px] text-[#AAAAAA]">AA123 · DXB–LHR</span>
-              </div>
-
-              <!-- Trigger context -->
-              <div class="border border-[#E5E5E2] bg-white px-4 py-3 space-y-1.5">
-                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888]">Trigger</p>
-                <p class="text-[12px] leading-[1.6] text-[#444444]">AA123 overbooked by 8. Oversell agent identified 11 voluntary candidates based on flexibility score and travel history.</p>
-                <div class="flex items-center gap-3 pt-1 border-t border-[#F0F0EE] mt-2">
-                  <span class="font-mono text-[11px] text-[#888888]">Compensation threshold:</span>
-                  <span class="font-mono text-[11px] text-[#444444] font-medium">$100 travel credit</span>
-                </div>
-              </div>
-
-              <!-- Push notification mockup -->
-              <div class="space-y-2">
-                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#888888] mb-3">What the passenger receives</p>
-
-                <!-- App notification -->
-                <div class="bg-white border border-[#E5E5E2] px-4 py-4 space-y-2.5">
-                  <div class="flex items-center gap-2 pb-2 border-b border-[#F5F5F3]">
-                    <div class="w-6 h-6 bg-[#111111] flex items-center justify-center shrink-0">
-                      <span class="font-mono text-[8px] text-white font-bold">DA</span>
-                    </div>
-                    <div>
-                      <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#444444]">Dream Airways</p>
-                      <p class="font-mono text-[10px] text-[#999999]">now</p>
-                    </div>
-                  </div>
-                  <p class="text-[13px] font-medium text-[#111111] leading-[1.4]">Change your flight for exclusive rewards.</p>
-                  <p class="text-[12px] leading-[1.6] text-[#555555]">We're offering select customers $100 travel credit to move to a later departure. Check your alternatives below.</p>
-                  <div class="flex gap-2 pt-1">
-                    <div class="flex-1 bg-[#111111] px-3 py-2 text-center">
-                      <span class="font-mono text-[11px] uppercase tracking-[1px] text-white">View offer</span>
-                    </div>
-                    <div class="flex-1 border border-[#E5E5E2] px-3 py-2 text-center">
-                      <span class="font-mono text-[11px] uppercase tracking-[1px] text-[#666666]">Dismiss</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Outcome strip -->
-              <div class="border border-[#E5E5E2] bg-[#EBEBEA] px-4 py-3 flex items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                  <span class="h-1.5 w-1.5 rounded-full bg-[#555555] animate-pulse shrink-0"></span>
-                  <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#555555]">8 of 11 accepted · 0 IDB</span>
-                </div>
-                <span class="font-mono text-[11px] text-[#777777]">$800 total compensation</span>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Control / Benefits — dark section -->
+      <!-- Safety & Control — dark section -->
       <section class="relative bg-[#111111] border-t border-[#111111] overflow-hidden home-section home-section--roomy-lg">
 
-        <!-- Heading -->
         <div class="home-section__inner">
-        <div class="max-w-2xl mb-16">
-          <p class="home-eyebrow home-eyebrow--dark">Your guardrails</p>
-          <h2 class="font-display text-[clamp(2rem,4vw,3rem)] leading-[1.05] font-light tracking-tight text-white">
-            Speed without surprises.
-          </h2>
-          <p class="mt-5 text-[14px] leading-[1.75] text-[#888888] max-w-lg">
-            Approvals, thresholds, role-based visibility, and full traceability mean technical and operations leaders can stand behind every action.
-          </p>
-        </div>
-
-        <!-- 4 benefit cards — 2×2 grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-[#2A2A2A] border border-[#2A2A2A] mb-14">
-
-          <!-- Card 1: Dashboard -->
-          <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-6">
-            <div class="w-10 h-10 border border-[#333333] flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-[#888888]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="2" width="7" height="7" rx="0.5"/>
-                <rect x="11" y="2" width="7" height="7" rx="0.5"/>
-                <rect x="2" y="11" width="7" height="7" rx="0.5"/>
-                <rect x="11" y="11" width="7" height="7" rx="0.5"/>
-              </svg>
-            </div>
-            <div>
-              <p class="text-[14px] font-medium text-white mb-2.5">Everything in one view</p>
-              <p class="text-[13px] leading-[1.7] text-[#888888]">The Vector dashboard surfaces every agent action, revenue outcome, and flight-level decision across your network in real time. No manual reporting. No chasing PSS exports. Your ops team sees the full picture from one screen.</p>
-            </div>
-            <div class="mt-auto pt-5 border-t border-[#2A2A2A]">
-              <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Live · network-wide · updated every 30s</span>
-            </div>
+          <div class="max-w-2xl mb-16">
+            <p class="home-eyebrow home-eyebrow--dark">AI with built-in safety guardrails</p>
+            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] leading-[1.05] font-light tracking-tight text-white">
+              Operationalize AI without compromising control
+            </h2>
+            <p class="mt-5 text-[14px] leading-[1.75] text-[#888888] max-w-lg">
+              Every action Vector takes runs within airline-defined rules and boundaries — visible, auditable, and fully under your team's control.
+            </p>
           </div>
 
-          <!-- Card 2: Policy -->
-          <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-6">
-            <div class="w-10 h-10 border border-[#333333] flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-[#888888]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="14" height="14" rx="1"/>
-                <path d="M7 10l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <!-- 4 Trust Cards — 2×2 grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-[#2A2A2A] border border-[#2A2A2A] mb-14">
+
+            <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-4">
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Rule-Constrained Execution</p>
+              <p class="text-[14px] font-medium text-white">Operational workflows execute within airline-defined rules and boundaries.</p>
             </div>
-            <div>
-              <p class="text-[14px] font-medium text-white mb-2.5">Your rules, always enforced</p>
-              <p class="text-[13px] leading-[1.7] text-[#888888]">Fare rules, blackout windows, load thresholds, passenger caps — Vector evaluates all of them before every action. If any rule isn't satisfied, the action doesn't execute. No exceptions.</p>
+
+            <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-4">
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Human Oversight</p>
+              <p class="text-[14px] font-medium text-white">Maintain visibility and approval control throughout execution workflows.</p>
             </div>
-            <div class="mt-auto pt-5 border-t border-[#2A2A2A]">
-              <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Actions execute only inside your policies</span>
+
+            <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-4">
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Audit Visibility</p>
+              <p class="text-[14px] font-medium text-white">Track operational actions, workflow activity, and execution history in real time.</p>
             </div>
+
+            <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-4">
+              <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Infrastructure Compatibility</p>
+              <p class="text-[14px] font-medium text-white">Work within existing airline systems without rebuilding operational infrastructure.</p>
+            </div>
+
           </div>
 
-          <!-- Card 3: Audit -->
-          <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-6">
-            <div class="w-10 h-10 border border-[#333333] flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-[#888888]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M4 6h12M4 10h8M4 14h10" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div>
-              <p class="text-[14px] font-medium text-white mb-2.5">Full trace on every decision</p>
-              <p class="text-[13px] leading-[1.7] text-[#888888]">Every signal detected, decision scored, and PSS write executed is logged with a complete trace — reason, timestamp, outcome. Your compliance and ops teams can reconstruct any action in seconds.</p>
-            </div>
-            <div class="mt-auto pt-5 border-t border-[#2A2A2A]">
-              <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Signal → decision → execution, logged</span>
-            </div>
-          </div>
-
-          <!-- Card 4: Override -->
-          <div class="bg-[#1A1A1A] px-8 py-10 flex flex-col gap-6">
-            <div class="w-10 h-10 border border-[#333333] flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 text-[#888888]" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="10" cy="10" r="7"/>
-                <path d="M8 8h4v4H8z" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div>
-              <p class="text-[14px] font-medium text-white mb-2.5">Human override, always available</p>
-              <p class="text-[13px] leading-[1.7] text-[#888888]">Need to hold Vector on a specific route, market, or flight? Pause any agent instantly. Override individual decisions. Roll back PSS writes before they propagate. Control is always one action away.</p>
-            </div>
-            <div class="mt-auto pt-5 border-t border-[#2A2A2A]">
-              <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#666666]">Full override at any point</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Trust line + CTA -->
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-          <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#555555]">
-            ISO 27001 Certified · SOC 2 in progress · Amadeus · Navitaire · Sabre · PROS
-          </p>
-          <a href="index.html#contact" class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-white bg-[#333333] px-8 py-4 hover:bg-[#444444] transition-colors duration-300 shrink-0">
-            Request a Demo
-          </a>
-        </div>
-        </div>
-
-      </section>
-
-      <!-- Security & enterprise (B9) -->
-      <section id="security-enterprise" class="relative bg-[#FAFAF7] border-t border-[#E5E5E2] home-section">
-        <div class="home-section__inner home-section__inner--narrow">
-          <p class="home-eyebrow">Security &amp; Trust</p>
-          <h2 class="font-display text-[clamp(1.85rem,3.5vw,2.65rem)] leading-[1.06] font-light text-[#111111]">
-            Built for regulated, high-stakes operations.
-          </h2>
-          <p class="mt-5 text-[15px] leading-[1.75] text-[#555555] max-w-2xl">
-            Vector is built as rule-constrained architecture: recommendations and writes respect policies you own, with full auditability from signal to action. Data governance and access controls align with how airlines review vendors; execution integrates with your existing PSS&mdash;no rip-and-replace mandate. AI-assisted scoring and prioritisation stay explainable and auditable for commercial, ops, and compliance stakeholders.
-          </p>
-          <p class="mt-5 text-[15px] leading-[1.75] text-[#555555] max-w-2xl">
-            Volantio maintains ISO 27001 certification and is pursuing SOC 2. Execution, data handling, and access controls are designed for airline security and compliance reviews&mdash;supplemented by standard contractual protections.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="mailto:hello@volantio.com?subject=Security%20documentation%20request" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] border border-[#E5E5E2] bg-white px-5 py-3 hover:border-[#999999] transition-colors">
-              Request security documentation
-            </a>
-            <a href="index.html#contact" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-white bg-[#111111] px-5 py-3 hover:bg-[#333333] transition-colors">
+          <!-- Trust line + CTA -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <p class="font-mono text-[11px] uppercase tracking-[1.4px] text-[#555555]">
+              ISO 27001 Certified · SOC 2 in progress · GDPR compliant
+            </p>
+            <a href="index.html#contact" class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-white bg-[#333333] px-8 py-4 hover:bg-[#444444] transition-colors duration-300 shrink-0">
               Request a Demo
             </a>
           </div>
         </div>
+
       </section>
 
-
-      <!-- Testimonials -->
+      <!-- Why Volantio -->
       <section class="relative bg-[#FAFAF7] border-t border-[#E5E5E2] home-section home-section--roomy overflow-hidden">
-
         <div class="home-section__inner">
-        <div class="mb-12">
-          <p class="home-eyebrow">Proof</p>
-          <h2 class="font-display text-[clamp(1.9rem,3.5vw,2.75rem)] leading-[1.05] font-light tracking-tight text-[#111111]">
-            Reallocation outcomes airlines measure.
-          </h2>
-          <p class="mt-3 text-[12px] leading-relaxed text-[#999999] max-w-2xl">
-            Illustrative examples for narrative discussion; approved customer metrics and references are shared when you engage the team.
-          </p>
-        </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-[#E5E5E2] border border-[#E5E5E2]">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          <!-- Card 1: Emirates -->
-          <div class="bg-white px-8 py-10 flex flex-col gap-6">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-[#555555]" aria-hidden="true"></span>
-                <p class="font-mono text-[11px] tracking-[1.8px] uppercase text-[#111111] font-semibold">Emirates</p>
+            <!-- Left: visual placeholder -->
+            <div class="bg-[#E5E5E2] w-full aspect-[4/3] lg:aspect-auto lg:h-[420px]"></div>
+
+            <!-- Right: copy -->
+            <div>
+              <p class="home-eyebrow">Tested with the world&rsquo;s leading airlines</p>
+              <h2 class="font-display text-[clamp(1.9rem,3.5vw,2.75rem)] leading-[1.05] font-light tracking-tight text-[#111111]">
+                Built from over a decade of real demand reallocation expertise.
+              </h2>
+              <div class="mt-6 space-y-4 max-w-lg">
+                <p class="text-[14px] leading-[1.75] text-[#555555]">
+                  The intelligence behind Vector is not generic AI applied to airline data.
+                </p>
+                <p class="text-[14px] leading-[1.75] text-[#555555]">
+                  It is operational logic shaped through years of working directly inside airline revenue, operations, and demand reallocation environments.
+                </p>
+                <p class="text-[14px] leading-[1.75] text-[#555555]">
+                  This is not a new AI concept looking for an airline use case. It is the next evolution of a proven operational platform already connected to real airline infrastructure.
+                </p>
               </div>
-              <span class="font-mono text-[10px] uppercase tracking-[1.2px] text-[#888888] border border-[#E5E5E2] px-2 py-0.5">Reallocation</span>
             </div>
-            <p class="font-display text-[1.5rem] leading-[1.15] font-light text-[#111111]">+$4.2M recovered in 90 days.</p>
-            <p class="text-[13px] leading-[1.7] text-[#555555]">"Vector changed how we respond to demand shifts after booking. Decisions that took hours now happen in seconds — and the revenue follows automatically."</p>
-            <div class="mt-auto pt-5 border-t border-[#E5E5E2] flex items-end justify-between gap-2">
-              <div>
-                <p class="text-[13px] text-[#111111] font-medium">Sarah Al-Mansouri</p>
-                <p class="text-[11px] text-[#888888] mt-0.5">VP Revenue Management</p>
-              </div>
-              <a href="#" class="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors duration-150 shrink-0">Read the story <svg class="w-2.5 h-2.5" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h6M5 2l3 3-3 3"/></svg></a>
-            </div>
+
           </div>
-
-          <!-- Card 2: Singapore Airlines -->
-          <div class="bg-white px-8 py-10 flex flex-col gap-6">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-[#555555]" aria-hidden="true"></span>
-                <p class="font-mono text-[11px] tracking-[1.8px] uppercase text-[#111111] font-semibold">Singapore Airlines</p>
-              </div>
-              <span class="font-mono text-[10px] uppercase tracking-[1.2px] text-[#888888] border border-[#E5E5E2] px-2 py-0.5">Oversell recovery</span>
-            </div>
-            <p class="font-display text-[1.5rem] leading-[1.15] font-light text-[#111111]">86% of overbooking events resolved pre-gate.</p>
-            <p class="text-[13px] leading-[1.7] text-[#555555]">"We used to catch these situations at the gate. Now they're resolved the night before. The Oversell agent runs quietly and the ops team barely needs to touch it."</p>
-            <div class="mt-auto pt-5 border-t border-[#E5E5E2] flex items-end justify-between gap-2">
-              <div>
-                <p class="text-[13px] text-[#111111] font-medium">James Tan</p>
-                <p class="text-[11px] text-[#888888] mt-0.5">Head of Network Operations</p>
-              </div>
-              <a href="#" class="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-[1.2px] text-[#555555] hover:text-[#111111] transition-colors duration-150 shrink-0">Read the story <svg class="w-2.5 h-2.5" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h6M5 2l3 3-3 3"/></svg></a>
-            </div>
-          </div>
-
-        </div>
         </div>
       </section>
 
@@ -923,17 +466,17 @@
         <div class="home-section__inner home-section__inner--wide relative">
           <p class="home-eyebrow">Next step</p>
           <h2 class="font-display text-[clamp(2rem,4vw,2.85rem)] leading-[1.05] font-light text-[#111111] tracking-tight">
-            Put reallocation execution to work on your routes.
+            See how Vector fits into modern airline operations
           </h2>
           <p class="mt-6 text-base leading-[26px] text-[#555555] max-w-xl">
-            Request a demo and we&rsquo;ll map signals, policy, PSS paths, and passenger channels to your operating model.
+            Explore how airlines are operationalizing demand reallocation opportunities with speed, confidence, and accuracy.
           </p>
           <div class="mt-10 flex flex-wrap gap-4">
             <a href="index.html#contact" class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-white bg-[#111111] px-8 py-5 hover:bg-[#555555] transition-colors duration-300">
               Request a Demo
             </a>
-            <a href="resources.html#case-studies" class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-[#666666] px-6 py-5 border border-[#E5E5E2] hover:text-[#111111] hover:border-[#111111]/30 transition-all duration-300">
-              Stories, cases &amp; quotes
+            <a href="mailto:hello@volantio.com" class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-[#666666] px-6 py-5 border border-[#E5E5E2] hover:text-[#111111] hover:border-[#111111]/30 transition-all duration-300">
+              Contact Us
             </a>
           </div>
         </div>
@@ -943,84 +486,93 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-[#E5E5E2] bg-[#FAFAF7] px-4 md:px-8 lg:px-14 pt-16 pb-12">
-
-      <!-- Top row: brand + nav columns -->
-      <div class="flex flex-col lg:flex-row gap-14 lg:justify-between lg:items-start">
-
-        <!-- Brand -->
-        <div class="shrink-0 max-w-xs">
-          <div class="flex items-center gap-3">
-            <span class="h-9 w-9 bg-[#111111] grid place-items-center text-white font-mono text-[12px] tracking-[1.2px] uppercase">Vo</span>
-            <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#444444]">Volantio</span>
+    <footer class="border-t border-[#E5E5E2] bg-white px-6 md:px-10 lg:px-14">
+      <div class="footer-newsletter-band border-b border-[#E5E5E2]" aria-labelledby="footer-email-heading">
+        <div class="max-w-[72rem] mx-auto py-10 md:py-12 lg:py-14">
+          <div class="grid lg:grid-cols-12 gap-8 md:gap-10 lg:gap-12 lg:items-end">
+            <div class="lg:col-span-5 space-y-3">
+              <p class="font-mono text-[10px] uppercase tracking-[0.14em] text-[#888888]">Email list</p>
+              <p id="footer-email-heading" class="text-[15px] md:text-[16px] leading-[1.72] text-[#555555] max-w-md">
+                Updates on demand reallocation and Vector (launching soon).
+              </p>
+            </div>
+            <div class="lg:col-span-7 lg:pl-4">
+              <div class="w-full max-w-xl lg:ml-auto space-y-4">
+                <p id="footer-email-form-heading" class="font-display text-[clamp(1rem,2vw,1.2rem)] font-light leading-snug text-[#111111] tracking-tight max-w-md">
+                  Get the latest demand reallocation and Vector&nbsp;insights.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-lg" action="#" method="post" aria-labelledby="footer-email-form-heading">
+                  <label for="footer-email-news" class="sr-only">Email address</label>
+                  <input id="footer-email-news" name="email" type="email" required placeholder="you@airline.com" class="flex-1 min-w-0 border border-[#E5E5E2] bg-[#FAFAF7] px-4 py-3 text-[15px] text-[#111111] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#111111]/40" autocomplete="email" />
+                  <button type="submit" class="font-mono text-[11px] uppercase tracking-[1.2px] bg-[#111111] text-white px-6 py-3 hover:bg-[#333333] transition-colors shrink-0">Sign up</button>
+                </form>
+                <p class="text-[12px] leading-relaxed text-[#999999]">Connect this form to your email stack.</p>
+              </div>
+            </div>
           </div>
-          <p class="mt-6 text-sm leading-[22px] text-[#444444]">
-            AI-driven demand reallocation for airlines&mdash;fast, accurate, and safe. Vector executes inside your PSS and passenger channels; Volantio brings the airline-hardened playbook behind it.
-          </p>
         </div>
-
-        <!-- Nav columns -->
-        <nav class="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-10 font-mono text-[11px] uppercase tracking-[1.2px]">
-
-          <!-- Product -->
-          <div class="space-y-4">
-            <p class="text-[#111111]">Product</p>
-            <a href="product.html" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Platform</a>
-            <a href="solutions.html" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Solutions</a>
-            <a href="resources.html#case-studies" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Stories, cases &amp; quotes</a>
-            <a href="index.html#contact" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Request a Demo</a>
-          </div>
-
-          <!-- Company -->
-          <div class="space-y-4">
-            <p class="text-[#111111]">Company</p>
-            <a href="about.html" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">About</a>
-            <a href="#" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Insights</a>
-            <a href="#contact" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Contact</a>
-          </div>
-
-          <!-- Legal -->
-          <div class="space-y-4">
-            <p class="text-[#111111]">Legal</p>
-            <a href="#" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">GDPR &amp; Privacy Notice</a>
-            <a href="#" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Privacy Policy</a>
-            <a href="#" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">List of Subprocessors</a>
-          </div>
-
-          <!-- Social / Contact -->
-          <div class="space-y-4">
-            <p class="text-[#111111]">Social</p>
-            <a href="https://linkedin.com/company/volantio" target="_blank" rel="noopener" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">LinkedIn</a>
-            <a href="https://twitter.com/volantio" target="_blank" rel="noopener" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">Twitter / X</a>
-            <a href="mailto:hello@volantio.com" class="block text-[#888888] hover:text-[#111111] transition-colors duration-150">hello@volantio.com</a>
-          </div>
-
-        </nav>
       </div>
 
-      <!-- Bottom bar -->
-      <div class="mt-14 pt-8 border-t border-[#E5E5E2] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">
-          © <span id="footer-year"></span> Volantio Inc. · All rights reserved
-        </p>
-        <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">
-          Powered by Vector · ISO 27001 Certified · SOC 2 in progress
-        </p>
+      <div class="pt-14 md:pt-16 pb-12">
+        <div class="max-w-[72rem] mx-auto flex flex-col lg:flex-row gap-14 lg:justify-between lg:items-start">
+          <div class="shrink-0 max-w-xs">
+            <div class="flex items-center gap-3">
+              <span class="h-9 w-9 bg-[#111111] grid place-items-center text-white font-mono text-[12px] tracking-[1.2px] uppercase" aria-hidden="true">Vo</span>
+              <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#444444]">Volantio</span>
+            </div>
+            <p class="mt-5 text-sm leading-[22px] text-[#444444]">
+              Spark win-win moments for businesses and consumers by finding the flexibility in anyone&rsquo;s plans.
+            </p>
+            <p class="mt-3 text-xs font-mono uppercase tracking-[0.1em] text-[#AAAAAA] leading-relaxed">Pioneering · Collaborative · Decisive · Trusted</p>
+          </div>
+          <nav class="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-10 font-mono text-[11px] uppercase tracking-[1.2px] flex-1 max-w-4xl" aria-label="Footer">
+            <div class="space-y-3">
+              <p class="text-[#111111]">Vector</p>
+              <a href="product.html" class="block text-[#888888] hover:text-[#111111]">Overview</a>
+              <a href="vector-how-it-works.html" class="block text-[#888888] hover:text-[#111111]">How It Works</a>
+              <a href="vector-arbitrage.html" class="block text-[#888888] hover:text-[#111111]">Arbitrage</a>
+              <a href="vector-oversell.html" class="block text-[#888888] hover:text-[#111111]">Oversell</a>
+              <a href="vector-signals.html" class="block text-[#888888] hover:text-[#111111]">Signals</a>
+              <a href="vector-security.html" class="block text-[#888888] hover:text-[#111111]">Security &amp; Trust</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Resources</p>
+              <a href="resources.html#research" class="block text-[#888888] hover:text-[#111111]">Research &amp; white papers</a>
+              <a href="resources.html#stories" class="block text-[#888888] hover:text-[#111111]">Customer stories</a>
+              <a href="resources.html#case-studies" class="block text-[#888888] hover:text-[#111111]">Stories, cases &amp; quotes</a>
+              <a href="resources.html#results" class="block text-[#888888] hover:text-[#111111]">Results</a>
+              <a href="resources.html#news" class="block text-[#888888] hover:text-[#111111]">News &amp; Press</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Company</p>
+              <a href="about.html" class="block text-[#888888] hover:text-[#111111]">About Volantio</a>
+              <a href="about.html#careers" class="block text-[#888888] hover:text-[#111111]">Careers</a>
+              <a href="index.html#contact" class="block text-[#888888] hover:text-[#111111]">Request a Demo</a>
+              <a href="mailto:hello@volantio.com" class="block text-[#888888] hover:text-[#111111]">Contact</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Legal</p>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Security</a>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Privacy Policy</a>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Subprocessors</a>
+            </div>
+          </nav>
+        </div>
+        <div class="max-w-[72rem] mx-auto mt-14 pt-8 border-t border-[#E5E5E2] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">© <span id="footer-year"></span> Volantio Inc.</p>
+          <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">Vector</p>
+        </div>
       </div>
-
     </footer>
 
     <script>
       document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-      // Header scroll effect
       const header = document.querySelector('[data-header]');
       if (header) {
         window.addEventListener('scroll', () => {
           header.classList.toggle('header-scrolled', window.scrollY > 10);
         }, { passive: true });
       }
-
     </script>
 
     <!-- ── Platform page animations ───────────────────────── -->
@@ -1118,6 +670,7 @@
 
     document.addEventListener('DOMContentLoaded', () => { setTimeout(phRunConversation, 400); });
     </script>
+    <script src="./main.js"></script>
 
   </body>
 </html>

@@ -2,8 +2,8 @@
 
 :root {
   color-scheme: light;
-  --color-primary: #555555;
-  --color-tertiary: #777777;
+  --color-primary: #0055FF;
+  --color-tertiary: #640AFF;
   --surface: #fafaf7;
   --border: #e5e5e2;
   --ink: #111111;
@@ -19,6 +19,18 @@ html {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Hide nav dropdown panels by default using display:none so they never render as plain text */
+header nav .group > div[class*="absolute"] {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+}
+header nav .group:hover > div[class*="absolute"] {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
 }
 
 .glass-header {
@@ -66,7 +78,7 @@ html {
   display: block;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 9px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 1.4px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -299,6 +311,7 @@ html {
 .home-eyebrow {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 11px;
+  font-weight: 200;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #888888;
@@ -352,7 +365,7 @@ html {
 .home-hero-category {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 10px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #666666;
@@ -411,7 +424,7 @@ html {
   gap: 0.625rem;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 10px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #777777;
@@ -452,7 +465,7 @@ html {
   gap: 0.45rem;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 9px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #666666;
@@ -494,7 +507,7 @@ html {
 .home-hero-convo__agent {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 9px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #a8a8a3;
@@ -508,7 +521,7 @@ html {
   font-size: 11px;
   font-weight: 400;
   line-height: 1.45;
-  color: #555555;
+  color: #444444;
   padding: 0.55rem 0.7rem;
   border-radius: 0;
   border: 1px solid #ecece8;

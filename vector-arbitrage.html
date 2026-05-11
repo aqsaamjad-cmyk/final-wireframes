@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arbitrage agent — Vector | Volantio</title>
-    <meta name="description" content="Arbitrage agent: move flexible demand from peak flights to alternatives with governed offers and PSS-safe execution." />
+    <meta name="description" content="Arbitrage agent: demand reallocation from peak departures to alternatives with governed execution, airline-defined rules, and auditable PSS paths." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@200;400&display=swap" rel="stylesheet" />
@@ -25,9 +25,11 @@
         },
       };
     </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23111111'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='14' font-weight='400' letter-spacing='1' fill='white'%3EVo%3C/text%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="bg-white text-[#111111] font-sans font-light antialiased overflow-x-hidden">
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
     <div class="fixed inset-0 pointer-events-none z-[60] grain opacity-[0.35]" aria-hidden="true"></div>
 
     <header class="fixed top-0 left-0 right-0 z-[100] glass-header border-b border-[#E5E5E2]/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,1,1)]" data-header>
@@ -56,7 +58,7 @@
                 <a href="vector-support.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">How we support you</a>
                 <a href="vector-support.html#implementation-speed" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Implementation speed</a>
                 <a href="vector-support.html#customer-care" class="block pl-8 pr-4 py-2 text-[12px] font-mono uppercase tracking-[0.06em] text-[#666666] hover:bg-[#FAFAF7] hover:text-[#111111]">Customer care</a>
-                <a href="product.html#security-enterprise" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
+                <a href="vector-security.html" class="block px-4 py-2.5 text-[13px] text-[#555555] hover:bg-[#FAFAF7] hover:text-[#111111]">Security &amp; Trust</a>
               </div>
             </div>
           </div>
@@ -94,74 +96,309 @@
         </div>
       </div>
     </header>
-    <main class="hero-below-fixed-nav">
 
-      <div class="home-section reveal-up">
-        <div class="home-section__inner home-section__inner--narrow">
-        <p class="home-eyebrow">Vector · Arbitrage</p>
-        <h1 class="font-display text-[clamp(2rem,4vw,2.75rem)] font-light text-[#111111] leading-tight">Arbitrage</h1>
-        <p class="mt-5 text-lg text-[#444444]">Move demand from peak departures to alternatives where your network has room &mdash; recovering seat value before the door closes.</p>
-        </div>
-      </div>
+    <main id="main-content">
 
-      <section class="border-t border-[#E5E5E2] bg-[#FAFAF7] home-section">
-        <div class="home-section__inner home-section__inner--narrow">
-          <p class="home-eyebrow">The problem</p>
-          <h2 class="font-display text-xl font-light text-[#111111]">Heat concentrates where you cannot board everyone profitably</h2>
-          <p class="mt-5 text-[15px] leading-[1.75] text-[#555555]">Some flights attract more demand than you can carry at the fare mix you sold. The classic response &mdash; discounting backward or hoping for no-shows &mdash; burns yield or pushes risk to the gate. Meanwhile other legs in the same market day still have seats you would rather fill.</p>
-          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">The opportunity is <strong class="font-medium text-[#444444]">demand reallocation</strong>: inviting flexible travelers to move to a flight that works better for the network, with an offer they can accept in your channels.</p>
-        </div>
-      </section>
-
-      <section class="border-t border-[#E5E5E2] bg-white home-section">
-        <div class="home-section__inner home-section__inner--narrow">
-          <p class="home-eyebrow">How Vector surfaces it</p>
-          <h2 class="font-display text-xl font-light text-[#111111]">Ranked moves, not spreadsheets</h2>
-          <p class="mt-5 text-[15px] leading-[1.75] text-[#555555]">Arbitrage continuously aligns load, eligibility, and business rules to flag departures where shifting voluntary demand is both feasible and valuable. Teams see suggested moves with context: who might move, to which alternative, and why the suggestion survives policy checks.</p>
-          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">Because Vector shares the same discovery fabric as other agents, you are not maintaining parallel lists of &ldquo;special projects&rdquo; per corridor.</p>
-        </div>
-      </section>
-
-      <section class="border-t border-[#E5E5E2] bg-[#FAFAF7] home-section">
-        <div class="home-section__inner home-section__inner--narrow">
-          <p class="home-eyebrow">Compliant execution</p>
-          <h2 class="font-display text-xl font-light text-[#111111]">Offers and PSS paths you already trust</h2>
-          <p class="mt-5 text-[15px] leading-[1.75] text-[#555555]">Accepted changes execute through your passenger channels and booking stack with the same controls as the rest of Vector: confirmation where you require it, immutable logging of what was promised, and boundaries for compensation or re-accommodation.</p>
-          <p class="mt-4 text-[15px] leading-[1.75] text-[#555555]">Speed never comes at the expense of <strong class="font-medium">safety and accuracy</strong> &mdash; reviewers can pause a lane, override a flight, or walk the audit trail when regulators or partners ask questions.</p>
-        </div>
-      </section>
-
-      <section class="border-t border-[#E5E5E2] bg-white home-section">
-        <div class="home-section__inner home-section__inner--narrow">
-          <p class="home-eyebrow">Who cares</p>
-          <h2 class="font-display text-xl font-light text-[#111111]">Commercial and network teams, aligned</h2>
-          <div class="mt-6 grid sm:grid-cols-2 gap-8 text-[15px] leading-[1.75] text-[#555555]">
-            <div>
-              <p class="font-mono text-[11px] uppercase text-[#111111] mb-2">Commercial</p>
-              <p>Protect revenue per seat on constrained departures while harvesting fills where load factors still have headroom.</p>
+      <!-- Hero — split layout -->
+      <section class="relative w-full bg-white overflow-hidden flex flex-col lg:flex-row reveal-up" style="padding-top:72px; min-height:88vh;">
+        <div class="relative z-10 flex flex-col justify-center lg:w-[52%] px-8 md:px-10 lg:px-14 py-12 lg:py-16">
+          <div class="space-y-8 max-w-xl">
+            <p class="home-eyebrow">Vector · Arbitrage</p>
+            <h1 class="font-display text-[clamp(2rem,4vw,2.85rem)] leading-[1.02] font-light text-[#111111] tracking-tight">Arbitrage</h1>
+            <p class="text-lg leading-[1.65] text-[#444444]">Demand reallocation from peak departures to alternatives where your network has room &mdash; recovering seat value before the door closes.</p>
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="index.html#contact" class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-white bg-[#111111] px-6 py-4 hover:bg-[#555555] transition-colors duration-300">Request a Demo</a>
+              <a href="vector-how-it-works.html" class="inline-flex font-mono text-xs tracking-[1.2px] uppercase text-[#444444] px-6 py-4 border border-[#E5E5E2] hover:border-[#111111]/30 hover:text-[#111111] transition-all duration-300">How It Works</a>
             </div>
-            <div>
-              <p class="font-mono text-[11px] uppercase text-[#111111] mb-2">Operations</p>
-              <p>Reduce last-minute juggling at the hub; see demand shifts land in the record with time to staff and communicate.</p>
+          </div>
+        </div>
+        <div class="relative lg:w-[48%] min-h-[280px] lg:min-h-0 bg-[#F5F5F3] flex items-center justify-center px-8 lg:px-12 py-12 lg:py-0 flex-shrink-0" aria-hidden="true">
+          <div class="w-full max-w-[340px]">
+            <p class="font-mono text-[10px] uppercase tracking-[1.4px] text-[#999999] mb-4">Network view · rebalancing</p>
+            <svg viewBox="0 0 180 100" class="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+              <rect x="66" y="4" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+              <rect x="126" y="10" width="46" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+              <rect x="30" y="62" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+              <rect x="102" y="58" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+              <circle cx="90" cy="48" r="5" fill="#D4D4D1"/>
+              <line x1="30" y1="23" x2="85" y2="44" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+              <line x1="90" y1="23" x2="90" y2="43" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+              <line x1="149" y1="25" x2="95" y2="44" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+              <line x1="54" y1="62" x2="90" y2="53" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+              <line x1="126" y1="60" x2="95" y2="53" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-[#E5E5E2] bg-[#FAFAF7] home-section">
+        <div class="home-section__inner">
+          <div class="grid lg:grid-cols-2 lg:gap-12 xl:gap-16 lg:items-start">
+            <div class="max-w-xl">
+              <p class="home-eyebrow">The problem</p>
+              <h2 class="font-display text-[clamp(1.35rem,2.75vw,1.75rem)] font-medium text-[#111111] leading-[1.2] tracking-tight">Peak demand outruns boarding at your fare mix—while parallel legs still have room</h2>
+              <p class="mt-5 text-[15px] leading-[1.75] text-[#444444]">Travelers hold bookings on departures that are now too tight for the fare mix you sold, while—on the same market day—parallel legs still have seats you need filled. Demand stays concentrated on the flight they purchased; it does not redistribute itself to match where the network has room.</p>
+              <p class="mt-4 text-[15px] leading-[1.75] text-[#444444]">Left unaddressed, teams reach for levers that trade yield for throughput or push risk to the gate: fare dilution, tightening overbooking, or last-moment improvisation. None of that captures the value represented by underloaded alternatives sitting next to an overloaded same-day departure.</p>
+            </div>
+            <div class="mt-10 lg:mt-0 bg-white border border-[#E5E5E2] p-6 md:p-8 flex items-center justify-center min-h-[200px]">
+              <svg viewBox="0 0 200 120" class="w-full max-w-[280px] h-auto" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="12" y="18" width="76" height="72" rx="2" stroke="#CBCBC8" stroke-width="1" fill="#FAFAF7"/>
+                <text x="22" y="48" font-family="monospace" font-size="8" fill="#888888">High load</text>
+                <text x="22" y="62" font-family="monospace" font-size="7" fill="#AAAAAA">Peak departure</text>
+                <rect x="112" y="48" width="76" height="42" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                <text x="122" y="70" font-family="monospace" font-size="8" fill="#888888">Headroom</text>
+                <text x="122" y="82" font-family="monospace" font-size="7" fill="#AAAAAA">Parallel leg</text>
+                <path d="M88 54 L108 64" stroke="#D4D4D1" stroke-width="1" stroke-dasharray="4 3"/>
+                <polygon points="106,62 108,64 106,66" fill="#D4D4D1"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-[#E5E5E2] bg-white home-section">
+        <div class="home-section__inner">
+          <div class="max-w-2xl">
+            <p class="home-eyebrow">How Vector surfaces it</p>
+            <h2 class="font-display text-[clamp(1.25rem,2.5vw,1.5rem)] font-light text-[#111111] leading-snug">Flagged departures, ranked by value</h2>
+            <p class="mt-5 text-[15px] leading-[1.75] text-[#444444]">Arbitrage detects load, eligibility, and rule fit, then ranks voluntary moves before anyone acts&mdash;the same <strong class="font-medium text-[#444444]">detect &rarr; decide &rarr; execute</strong> spine as the rest of Vector. Teams see who might move, to which alternative, and why the candidate survives policy checks.</p>
+          </div>
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="bg-white border border-[#E5E5E2] flex flex-col overflow-hidden">
+              <div class="bg-[#F5F5F3] h-[160px] flex items-center justify-center p-6 overflow-hidden">
+                <svg viewBox="0 0 180 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="6" y="8" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <rect x="66" y="4" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <rect x="126" y="10" width="46" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <rect x="30" y="62" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <rect x="102" y="58" width="48" height="30" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                  <circle cx="90" cy="48" r="5" fill="#D4D4D1"/>
+                  <line x1="30" y1="23" x2="85" y2="44" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+                  <line x1="90" y1="23" x2="90" y2="43" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+                  <line x1="149" y1="25" x2="95" y2="44" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+                  <line x1="54" y1="62" x2="90" y2="53" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+                  <line x1="126" y1="60" x2="95" y2="53" stroke="#E0E0DD" stroke-width="1" stroke-dasharray="3 2"/>
+                </svg>
+              </div>
+              <div class="p-5 flex flex-col gap-2">
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] font-medium">Detect</p>
+                <p class="text-[13px] leading-[1.75] text-[#666666]">Surface tight legs and alternatives with headroom before the window closes.</p>
+              </div>
+            </div>
+            <div class="bg-white border border-[#E5E5E2] flex flex-col overflow-hidden">
+              <div class="bg-[#F5F5F3] h-[160px] flex items-center justify-center p-6 overflow-hidden">
+                <svg viewBox="0 0 180 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="8" y="8" width="164" height="18" rx="2" fill="#EAEAE7"/>
+                  <path d="M152 13l3 4 6-7" stroke="#888886" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="8" y="33" width="164" height="18" rx="2" fill="#EAEAE7"/>
+                  <path d="M152 38l3 4 6-7" stroke="#888886" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="8" y="58" width="164" height="18" rx="2" fill="#E2E2DF"/>
+                  <line x1="152" y1="67" x2="168" y2="67" stroke="#BBBBBA" stroke-width="1.4" stroke-linecap="round"/>
+                  <rect x="8" y="83" width="164" height="12" rx="2" fill="#EAEAE7"/>
+                  <path d="M152 87l3 4 6-7" stroke="#888886" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="12" y="21" font-family="monospace" font-size="7" fill="#888886">Fare class</text>
+                  <text x="12" y="46" font-family="monospace" font-size="7" fill="#888886">Load threshold</text>
+                  <text x="12" y="71" font-family="monospace" font-size="7" fill="#AAAAAA">Blackout window</text>
+                  <text x="12" y="93" font-family="monospace" font-size="7" fill="#888886">Compensation cap</text>
+                </svg>
+              </div>
+              <div class="p-5 flex flex-col gap-2">
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] font-medium">Decide</p>
+                <p class="text-[13px] leading-[1.75] text-[#666666]">Only candidates that pass your rules advance; rationale stays visible for reviewers.</p>
+              </div>
+            </div>
+            <div class="bg-white border border-[#E5E5E2] flex flex-col overflow-hidden">
+              <div class="bg-[#F5F5F3] h-[160px] flex items-center justify-center p-6 overflow-hidden">
+                <svg viewBox="0 0 180 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="20" y="10" width="140" height="18" rx="1" fill="#EAEAE7"/>
+                  <path d="M148 16l3 4 6-7" stroke="#888886" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="25" y="23" font-family="monospace" font-size="6.5" fill="#888886">Signal detected</text>
+                  <rect x="20" y="34" width="140" height="18" rx="1" fill="#EAEAE7"/>
+                  <path d="M148 40l3 4 6-7" stroke="#888886" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="25" y="47" font-family="monospace" font-size="6.5" fill="#888886">Rules passed</text>
+                  <rect x="20" y="58" width="140" height="18" rx="1" fill="#EAEAE7"/>
+                  <path d="M148 64l3 4 6-7" stroke="#888886" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="25" y="71" font-family="monospace" font-size="6.5" fill="#888886">PSS write confirmed</text>
+                  <rect x="20" y="82" width="140" height="14" rx="1" fill="#EAEAE7"/>
+                  <path d="M148 87l3 4 6-7" stroke="#888886" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="25" y="93" font-family="monospace" font-size="6.5" fill="#888886">Outcome recorded</text>
+                </svg>
+              </div>
+              <div class="p-5 flex flex-col gap-2">
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] font-medium">Execute</p>
+                <p class="text-[13px] leading-[1.75] text-[#666666]">Writes and outreach stay on the governed path with a full audit record.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-8 text-[14px] leading-[1.7] text-[#444444] max-w-3xl border-t border-[#E5E5E2] pt-6">It runs on the same execution layer as your other agents&mdash;no parallel &ldquo;special project&rdquo; lists per corridor.</p>
+        </div>
+      </section>
+
+      <section class="border-t border-[#E5E5E2] bg-[#FAFAF7] home-section">
+        <div class="home-section__inner">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="max-w-xl">
+              <p class="home-eyebrow">Governed execution</p>
+              <h2 class="font-display text-[clamp(1.25rem,2.5vw,1.5rem)] font-light text-[#111111] leading-snug">PSS and channels you already run</h2>
+              <p class="mt-5 text-[15px] leading-[1.75] text-[#444444]"><strong class="font-medium text-[#444444]">Governed execution</strong>: accepted changes flow through your passenger channels and booking stack under the same controls as the rest of Vector&mdash;confirmation where you require it, immutable logging, and clear boundaries for compensation or re-accommodation.</p>
+              <p class="mt-4 text-[15px] leading-[1.75] text-[#444444]">Reviewers can pause a lane, override a flight, or walk the <strong class="font-medium text-[#444444]">audit trail</strong> when regulators or partners ask questions.</p>
+            </div>
+            <div class="bg-white border border-[#E5E5E2] p-6 md:p-8 flex items-center justify-center">
+              <svg viewBox="0 0 180 100" class="w-full max-w-[320px] h-auto" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="20" width="70" height="60" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                <text x="14" y="40" font-family="monospace" font-size="6.5" fill="#888886">PSS</text>
+                <text x="14" y="52" font-family="monospace" font-size="6.5" fill="#AAAAAA">Amadeus</text>
+                <text x="14" y="63" font-family="monospace" font-size="6.5" fill="#AAAAAA">Sabre</text>
+                <text x="14" y="74" font-family="monospace" font-size="6.5" fill="#AAAAAA">Navitaire</text>
+                <rect x="102" y="20" width="70" height="26" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                <text x="108" y="30" font-family="monospace" font-size="6.5" fill="#888886">Email</text>
+                <text x="108" y="40" font-family="monospace" font-size="6.5" fill="#AAAAAA">Offer sent</text>
+                <rect x="102" y="54" width="70" height="26" rx="2" stroke="#CBCBC8" stroke-width="1" fill="white"/>
+                <text x="108" y="64" font-family="monospace" font-size="6.5" fill="#888886">App</text>
+                <text x="108" y="74" font-family="monospace" font-size="6.5" fill="#AAAAAA">Offer sent</text>
+                <line x1="78" y1="50" x2="102" y2="33" stroke="#D4D4D1" stroke-width="1" stroke-dasharray="3 2"/>
+                <line x1="78" y1="50" x2="102" y2="67" stroke="#D4D4D1" stroke-width="1" stroke-dasharray="3 2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-[#E5E5E2] bg-white home-section">
+        <div class="home-section__inner">
+          <p class="home-eyebrow">Who cares</p>
+          <h2 class="font-display text-[clamp(1.25rem,2.5vw,1.5rem)] font-light text-[#111111] leading-snug max-w-2xl">Commercial and network teams, aligned</h2>
+          <div class="mt-8 grid sm:grid-cols-2 gap-5">
+            <div class="bg-white border border-[#E5E5E2] p-6 md:p-8">
+              <p class="font-mono text-[11px] uppercase text-[#111111] mb-3">Commercial</p>
+              <p class="text-[15px] leading-[1.75] text-[#444444]">Protect yield on tight departures by harvesting fills where the network still has headroom.</p>
+            </div>
+            <div class="bg-white border border-[#E5E5E2] p-6 md:p-8">
+              <p class="font-mono text-[11px] uppercase text-[#111111] mb-3">Operations</p>
+              <p class="text-[15px] leading-[1.75] text-[#444444]">See shifts hit the PSS early enough to staff and communicate&mdash;less improvisation at the hub.</p>
             </div>
           </div>
         </div>
       </section>
 
       <section class="border-t border-[#E5E5E2] bg-[#FAFAF7] home-section">
-        <div class="home-section__inner home-section__inner--narrow">
-          <p class="home-eyebrow">Related scenarios</p>
-          <p class="text-[15px] leading-[1.75] text-[#555555]">See how reallocation scenarios cluster across revenue and ops on <a href="solutions.html#lane-revenue" class="text-[#111111] underline underline-offset-2 decoration-[#CCCCCC] hover:decoration-[#111111]">Solutions &mdash; revenue pressure</a> and <a href="solutions.html#use-case-lanes" class="text-[#111111] underline underline-offset-2 decoration-[#CCCCCC] hover:decoration-[#111111]">broader lanes</a>.</p>
+        <div class="home-section__inner">
+          <p class="home-eyebrow">Use cases</p>
+          <h2 class="font-display text-[clamp(1.25rem,2.5vw,1.5rem)] font-light text-[#111111] leading-snug max-w-2xl">Revenue and network pressure this agent is built for</h2>
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="bg-white border border-[#E5E5E2] overflow-hidden flex flex-col">
+              <div class="bg-[#FAFAF7] border-b border-[#E5E5E2] px-5 py-3">
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111]">Yield &amp; cabin mix</p>
+              </div>
+              <p class="p-5 text-[15px] leading-[1.75] text-[#444444]">Rebalance load when margin and cabin shape diverge across departures on the same day.</p>
+            </div>
+            <div class="bg-white border border-[#E5E5E2] overflow-hidden flex flex-col">
+              <div class="bg-[#FAFAF7] border-b border-[#E5E5E2] px-5 py-3">
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111]">Last-seat &amp; upgrade paths</p>
+              </div>
+              <p class="p-5 text-[15px] leading-[1.75] text-[#444444]">Fill premium and coach gaps closer to departure, inside eligibility and offer rules you set.</p>
+            </div>
+            <div class="bg-white border border-[#E5E5E2] overflow-hidden flex flex-col">
+              <div class="bg-[#FAFAF7] border-b border-[#E5E5E2] px-5 py-3">
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111]">Parallel-flight load balancing</p>
+              </div>
+              <p class="p-5 text-[15px] leading-[1.75] text-[#444444]">Move flexibility before check-in closes the window when one flight is tight and a parallel leg has room.</p>
+            </div>
+            <div class="bg-white border border-[#E5E5E2] overflow-hidden flex flex-col">
+              <div class="bg-[#FAFAF7] border-b border-[#E5E5E2] px-5 py-3">
+                <p class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111]">Demand spikes &amp; network shifts</p>
+              </div>
+              <p class="p-5 text-[15px] leading-[1.75] text-[#444444]">Act while the yield window is still open as schedules or demand move.</p>
+            </div>
+          </div>
+          <p class="mt-8 text-[14px] leading-[1.7] text-[#444444] max-w-3xl">Often paired with <strong class="font-medium text-[#444444]">Signals</strong> for stimulation; with <strong class="font-medium text-[#444444]">Oversell</strong> when pressure spans revenue and operations.</p>
+          <p class="mt-6">
+            <a href="solutions.html#lane-revenue" class="inline-flex font-mono text-[11px] uppercase tracking-[1.2px] text-[#111111] border border-[#E5E5E2] bg-white px-5 py-3 hover:border-[#111111]/40 transition-colors">See scenarios on Solutions</a>
+          </p>
         </div>
       </section>
 
-      <div class="border-t border-[#E5E5E2] home-section home-section--compact flex flex-wrap gap-4 justify-center">
-        <a href="vector-how-it-works.html" class="font-mono text-[11px] uppercase tracking-[1.2px] border border-[#E5E5E2] px-5 py-3 hover:border-[#111111]/30">How It Works</a>
-        <a href="vector-oversell.html" class="font-mono text-[11px] uppercase tracking-[1.2px] border border-[#E5E5E2] px-5 py-3 hover:border-[#111111]/30">Oversell agent</a>
-        <a href="product.html" class="font-mono text-[11px] uppercase tracking-[1.2px] border border-[#E5E5E2] px-5 py-3 hover:border-[#111111]/30">Vector Overview</a>
-        <a href="index.html#contact" class="font-mono text-[11px] uppercase tracking-[1.2px] text-white bg-[#111111] px-5 py-3 hover:bg-[#555555]">Request a Demo</a>
-      </div>
     </main>
+
+    <footer class="border-t border-[#E5E5E2] bg-white px-6 md:px-10 lg:px-14">
+      <div class="footer-newsletter-band border-b border-[#E5E5E2]" aria-labelledby="footer-email-heading">
+        <div class="max-w-[72rem] mx-auto py-10 md:py-12 lg:py-14">
+          <div class="grid lg:grid-cols-12 gap-8 md:gap-10 lg:gap-12 lg:items-end">
+            <div class="lg:col-span-5 space-y-3">
+              <p class="font-mono text-[10px] uppercase tracking-[0.14em] text-[#888888]">Email list</p>
+              <p id="footer-email-heading" class="text-[15px] md:text-[16px] leading-[1.72] text-[#555555] max-w-md">
+                Updates on demand reallocation and Vector (launching soon).
+              </p>
+            </div>
+            <div class="lg:col-span-7 lg:pl-4">
+              <div class="w-full max-w-xl lg:ml-auto space-y-4">
+                <p id="footer-email-form-heading" class="font-display text-[clamp(1rem,2vw,1.2rem)] font-light leading-snug text-[#111111] tracking-tight max-w-md">
+                  Get the latest demand reallocation and Vector&nbsp;insights.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-lg" action="#" method="post" aria-labelledby="footer-email-form-heading">
+                  <label for="footer-email-news" class="sr-only">Email address</label>
+                  <input id="footer-email-news" name="email" type="email" required placeholder="you@airline.com" class="flex-1 min-w-0 border border-[#E5E5E2] bg-[#FAFAF7] px-4 py-3 text-[15px] text-[#111111] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#111111]/40" autocomplete="email" />
+                  <button type="submit" class="font-mono text-[11px] uppercase tracking-[1.2px] bg-[#111111] text-white px-6 py-3 hover:bg-[#333333] transition-colors shrink-0">Sign up</button>
+                </form>
+                <p class="text-[12px] leading-relaxed text-[#999999]">Connect this form to your email stack.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-14 md:pt-16 pb-12">
+        <div class="max-w-[72rem] mx-auto flex flex-col lg:flex-row gap-14 lg:justify-between lg:items-start">
+          <div class="shrink-0 max-w-xs">
+            <div class="flex items-center gap-3">
+              <span class="h-9 w-9 bg-[#111111] grid place-items-center text-white font-mono text-[12px] tracking-[1.2px] uppercase" aria-hidden="true">Vo</span>
+              <span class="font-mono text-[11px] uppercase tracking-[1.2px] text-[#444444]">Volantio</span>
+            </div>
+            <p class="mt-5 text-sm leading-[22px] text-[#444444]">
+              Spark win-win moments for businesses and consumers by finding the flexibility in anyone&rsquo;s plans.
+            </p>
+            <p class="mt-3 text-xs font-mono uppercase tracking-[0.1em] text-[#AAAAAA] leading-relaxed">Pioneering · Collaborative · Decisive · Trusted</p>
+          </div>
+          <nav class="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-10 font-mono text-[11px] uppercase tracking-[1.2px] flex-1 max-w-4xl" aria-label="Footer">
+            <div class="space-y-3">
+              <p class="text-[#111111]">Vector</p>
+              <a href="product.html" class="block text-[#888888] hover:text-[#111111]">Overview</a>
+              <a href="vector-how-it-works.html" class="block text-[#888888] hover:text-[#111111]">How It Works</a>
+              <a href="vector-arbitrage.html" class="block text-[#888888] hover:text-[#111111]">Arbitrage</a>
+              <a href="vector-oversell.html" class="block text-[#888888] hover:text-[#111111]">Oversell</a>
+              <a href="vector-signals.html" class="block text-[#888888] hover:text-[#111111]">Signals</a>
+              <a href="vector-security.html" class="block text-[#888888] hover:text-[#111111]">Security &amp; Trust</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Resources</p>
+              <a href="resources.html#research" class="block text-[#888888] hover:text-[#111111]">Research &amp; white papers</a>
+              <a href="resources.html#stories" class="block text-[#888888] hover:text-[#111111]">Customer stories</a>
+              <a href="resources.html#case-studies" class="block text-[#888888] hover:text-[#111111]">Stories, cases &amp; quotes</a>
+              <a href="resources.html#results" class="block text-[#888888] hover:text-[#111111]">Results</a>
+              <a href="resources.html#news" class="block text-[#888888] hover:text-[#111111]">News &amp; Press</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Company</p>
+              <a href="about.html" class="block text-[#888888] hover:text-[#111111]">About Volantio</a>
+              <a href="about.html#careers" class="block text-[#888888] hover:text-[#111111]">Careers</a>
+              <a href="index.html#contact" class="block text-[#888888] hover:text-[#111111]">Request a Demo</a>
+              <a href="mailto:hello@volantio.com" class="block text-[#888888] hover:text-[#111111]">Contact</a>
+            </div>
+            <div class="space-y-3">
+              <p class="text-[#111111]">Legal</p>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Security</a>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Privacy Policy</a>
+              <a href="#" class="block text-[#888888] hover:text-[#111111]">Subprocessors</a>
+            </div>
+          </nav>
+        </div>
+        <div class="max-w-[72rem] mx-auto mt-14 pt-8 border-t border-[#E5E5E2] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">© <span id="footer-year"></span> Volantio Inc.</p>
+          <p class="font-mono text-[12px] uppercase tracking-[1.4px] text-[#777777]">Vector</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
