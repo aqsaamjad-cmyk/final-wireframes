@@ -324,6 +324,21 @@ header nav .group:hover > div[class*="absolute"] {
   font-weight: 300;
   line-height: 1.45;
   color: #444444;
+  /* Do not combine with Tailwind `block` — it breaks clamp in Chrome vs Play CDN order */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin-top: 0.125rem;
+  padding-left: calc(2.25rem + 0.75rem);
+}
+
+/* Agents cell: desktop mega only; avoids sm: breakpoint fighting narrow Chrome windows */
+.nav-vector-mega__agents-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .nav-vector-mega__column-label {
