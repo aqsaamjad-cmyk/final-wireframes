@@ -19,6 +19,6 @@ Stakeholder one-pager: scroll order, job of each beat, and primary proof element
 
 **Related pages (not on this scroll):** Deeper agent narrative lives on [`vector-agents.html`](../vector-agents.html) (Arbitrage, Oversell, Signals, roadmap). How-it-works and security have their own HTML routes from the global nav.
 
-**Global header (Vector dropdown):** Overview (`product.html`), How It Works, Agents hub (`vector-agents.html`), roadmap stub (`vector-roadmap.html`), support anchors (`vector-support.html`), Security (`vector-security.html`).
+**Global header (Vector dropdown):** Overview (`product.html`), How It Works, Agents hub (`vector-agents.html`), roadmap stub (`vector-roadmap.html`), Support as two mega rows—[`vector-support.html#implementation-speed`](../vector-support.html#implementation-speed) (implementation speed) and [`vector-support.html#customer-care`](../vector-support.html#customer-care) (customer care)—Security (`vector-security.html`).
 
 **Note:** The former `#platform-overview` ecosystem band was removed; capabilities and positioning carry the product story on this page.
